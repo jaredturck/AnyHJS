@@ -7,7 +7,7 @@ export function TermsAndConditions() {
         <div>
             <ClothingBanner
                 title="Terms & Conditions"
-                subtitle="Please read these terms carefully before using the site"
+                subtitle="The terms that apply when you use AnyHJS"
                 img_src={banner1}
             />
 
@@ -20,7 +20,7 @@ export function TermsAndConditions() {
 
                 <p>
                     These Terms and Conditions (the "Terms") govern your access to and use of the website,
-                    services and online store operated by NESZN ("NESZN", "we", "us", or "our"), including
+                    services and online store operated by AnyHJS ("AnyHJS", "we", "us", or "our"), including
                     the purchase of products through our website (the "Site"). By accessing or using the
                     Site, you agree to be bound by these Terms. If you do not agree to these Terms, you
                     must not use the Site.
@@ -34,13 +34,13 @@ export function TermsAndConditions() {
                     otherwise.
                 </p>
 
-                <h2>1. About NESZN</h2>
+                <h2>1. About AnyHJS</h2>
 
                 <p>
-                    NESZN operates as an online retailer and redistributor of clothing, footwear and related
+                    AnyHJS operates as an online retailer and redistributor of clothing, footwear and related
                     products from multiple third-party brands around the world (the "Brands"). We source
                     products from numerous suppliers and make them available for purchase through our Site.
-                    NESZN is an independent retailer and is not the manufacturer of the products offered
+                    AnyHJS is an independent retailer and is not the manufacturer of the products offered
                     unless explicitly stated otherwise on the relevant product page.
                 </p>
 
@@ -78,14 +78,14 @@ export function TermsAndConditions() {
 
                 <p>
                     You must notify us immediately if you suspect any unauthorised use of your account or
-                    any other breach of security. NESZN shall not be liable for any loss or damage arising
+                    any other breach of security. AnyHJS shall not be liable for any loss or damage arising
                     from your failure to safeguard your account information.
                 </p>
 
                 <h2>4. Products, Descriptions and Availability</h2>
 
                 <p>
-                    NESZN acts as a retailer of products supplied by numerous Brands. We make reasonable
+                    AnyHJS acts as a retailer of products supplied by numerous Brands. We make reasonable
                     efforts to ensure that product descriptions, images, prices and availability information
                     on the Site are accurate and up to date; however, errors, inaccuracies and omissions may
                     occur. Colours and appearance of products may vary depending on your device display and
@@ -109,7 +109,7 @@ export function TermsAndConditions() {
                 </p>
 
                 <p>
-                    A binding contract between you and NESZN is formed only when we send you an order
+                    A binding contract between you and AnyHJS is formed only when we send you an order
                     confirmation email stating that your order has been accepted and dispatched. We reserve
                     the right to refuse any order for any reason, including but not limited to product
                     unavailability, pricing or description errors, or suspected fraud.
@@ -168,7 +168,7 @@ export function TermsAndConditions() {
 
                 <p>
                     Risk of loss and title to the products pass to you when the products are delivered to the
-                    delivery address specified in your order. NESZN shall not be liable for any delay or
+                    delivery address specified in your order. AnyHJS shall not be liable for any delay or
                     failure to deliver products due to events beyond our reasonable control, including but
                     not limited to strikes, carrier delays, customs checks, natural disasters or other
                     force majeure events.
@@ -187,7 +187,7 @@ export function TermsAndConditions() {
                 <p>
                     Certain products may be excluded from returns for hygiene or other reasons (for example,
                     underwear, swimwear, or personalised items), as specified in our Returns and Refunds
-                    Policy and/or on the product page. NESZN reserves the right to refuse a refund or
+                    Policy and/or on the product page. AnyHJS reserves the right to refuse a refund or
                     exchange where returned products do not meet the conditions set out in the applicable
                     policy.
                 </p>
@@ -195,7 +195,7 @@ export function TermsAndConditions() {
                 <h2>10. Gift Cards and Store Credit</h2>
 
                 <p>
-                    NESZN may offer digital or physical gift cards, as well as store credits, which can be
+                    AnyHJS may offer digital or physical gift cards, as well as store credits, which can be
                     used to purchase eligible products on the Site. Gift cards and credits are typically
                     non-refundable, non-transferable (except as required by law) and cannot be exchanged
                     for cash, except where required by applicable law.
@@ -212,7 +212,7 @@ export function TermsAndConditions() {
                 <p>
                     The Site and its contents, including but not limited to text, graphics, logos, icons,
                     images, audio clips, video clips, software and design elements (collectively, the
-                    "Content"), are owned or licensed by NESZN and are protected by copyright, trade mark
+                    "Content"), are owned or licensed by AnyHJS and are protected by copyright, trade mark
                     and other intellectual property laws.
                 </p>
 
@@ -226,7 +226,7 @@ export function TermsAndConditions() {
                 <p>
                     All brand names, logos and trade marks of third-party Brands (including, without
                     limitation, Nike, Adidas and any other labels featured on the Site) remain the property
-                    of their respective owners. NESZN does not claim any ownership of such third-party
+                    of their respective owners. AnyHJS does not claim any ownership of such third-party
                     trade marks and uses them solely for identification and descriptive purposes.
                 </p>
 
@@ -234,7 +234,7 @@ export function TermsAndConditions() {
 
                 <p>
                     The Site may allow you to submit reviews, comments, photos or other content
-                    ("User Content"). By submitting User Content, you grant NESZN a worldwide, royalty-free,
+                    ("User Content"). By submitting User Content, you grant AnyHJS a worldwide, royalty-free,
                     perpetual, irrevocable, non-exclusive, transferable licence to use, reproduce, modify,
                     adapt, publish, translate, create derivative works from, distribute and display such
                     content in any media, for any lawful purpose in connection with our business.
@@ -243,7 +243,7 @@ export function TermsAndConditions() {
                 <p>
                     You represent and warrant that you own or otherwise control all rights to the User
                     Content you submit, that the content is accurate and not misleading, and that its use
-                    by NESZN will not infringe the rights of any third party or violate any law. We reserve
+                    by AnyHJS will not infringe the rights of any third party or violate any law. We reserve
                     the right, but not the obligation, to monitor, edit or remove any User Content at our
                     sole discretion.
                 </p>
@@ -261,7 +261,7 @@ export function TermsAndConditions() {
                 <h2>14. Security and Cybersecurity</h2>
 
                 <p>
-                    NESZN implements reasonable technical and organisational measures designed to protect
+                    AnyHJS implements reasonable technical and organisational measures designed to protect
                     the security, integrity and confidentiality of your information and to safeguard the
                     Site against unauthorised access, misuse and cyber threats. Such measures may include,
                     without limitation, encryption, firewalls, secure server environments and regular
@@ -273,7 +273,7 @@ export function TermsAndConditions() {
                     of data over the internet can be guaranteed to be completely secure. You are responsible
                     for maintaining the security of your devices, software and network connections, and for
                     taking appropriate precautions (such as using updated antivirus software and strong
-                    passwords) when accessing the Site. NESZN shall not be liable for any loss or damage
+                    passwords) when accessing the Site. AnyHJS shall not be liable for any loss or damage
                     arising from malicious cyber activity or security breaches that occur despite our
                     reasonable safeguards or that are caused by factors outside our reasonable control.
                 </p>
@@ -282,7 +282,7 @@ export function TermsAndConditions() {
 
                 <p>
                     The Site may contain links to third-party websites, services or resources that are not
-                    owned or controlled by NESZN. These links are provided for your convenience only and do
+                    owned or controlled by AnyHJS. These links are provided for your convenience only and do
                     not constitute an endorsement of such third parties or their content. We have no control
                     over, and assume no responsibility for, the content, privacy policies or practices of
                     any third-party sites or services.
@@ -300,7 +300,7 @@ export function TermsAndConditions() {
                     To the fullest extent permitted by law, the Site and all products, services and Content
                     made available through it are provided on an "as is" and "as available" basis, without
                     any warranties of any kind, whether express or implied. Without limiting the foregoing,
-                    NESZN disclaims all implied warranties of merchantability, fitness for a particular
+                    AnyHJS disclaims all implied warranties of merchantability, fitness for a particular
                     purpose, title and non-infringement.
                 </p>
 
@@ -314,13 +314,13 @@ export function TermsAndConditions() {
                 <h2>17. Limitation of Liability</h2>
 
                 <p>
-                    Nothing in these Terms shall exclude or limit NESZN’s liability for death or personal
+                    Nothing in these Terms shall exclude or limit AnyHJS’s liability for death or personal
                     injury caused by our negligence, for fraud or fraudulent misrepresentation, or for any
                     other liability that cannot be excluded or limited under applicable law.
                 </p>
 
                 <p>
-                    Subject to the preceding paragraph and to the fullest extent permitted by law, NESZN,
+                    Subject to the preceding paragraph and to the fullest extent permitted by law, AnyHJS,
                     its directors, officers, employees, agents, affiliates and suppliers shall not be liable
                     for any indirect, incidental, consequential, special, punitive or exemplary damages, or
                     for any loss of profits, revenue, data, goodwill or business opportunity, arising out of
@@ -332,12 +332,12 @@ export function TermsAndConditions() {
                 <p>
                     To the extent that we are found liable to you for any claim arising out of or in
                     connection with the Site, products or these Terms that is not otherwise excluded, our
-                    aggregate liability to you shall be limited to the total amount paid by you to NESZN for
+                    aggregate liability to you shall be limited to the total amount paid by you to AnyHJS for
                     the product or service giving rise to the claim.
                 </p>
 
                 <p>
-                    You acknowledge that NESZN is not responsible for any injury, loss or damage arising
+                    You acknowledge that AnyHJS is not responsible for any injury, loss or damage arising
                     from your use, misuse or handling of any product purchased through the Site, including
                     any unusual or unforeseeable incidents occurring during unboxing, wearing or otherwise
                     interacting with the products, except to the extent required by applicable law.
@@ -346,7 +346,7 @@ export function TermsAndConditions() {
                 <h2>18. Indemnity</h2>
 
                 <p>
-                    You agree to indemnify, defend and hold harmless NESZN, its directors, officers,
+                    You agree to indemnify, defend and hold harmless AnyHJS, its directors, officers,
                     employees, agents and affiliates from and against any and all claims, liabilities,
                     damages, losses, costs and expenses (including reasonable legal fees) arising out of or
                     in connection with your breach of these Terms, your misuse of the Site, your violation
@@ -379,7 +379,7 @@ export function TermsAndConditions() {
                 </p>
 
                 <p>
-                    You and NESZN agree that the courts of England and Wales (or other agreed jurisdiction)
+                    You and AnyHJS agree that the courts of England and Wales (or other agreed jurisdiction)
                     shall have exclusive jurisdiction to settle any dispute or claim arising out of or in
                     connection with these Terms or your use of the Site, subject to any mandatory rights you
                     may have as a consumer to bring claims in your local courts under applicable consumer
@@ -399,7 +399,7 @@ export function TermsAndConditions() {
 
                 <p>
                     These Terms, together with the Policies and any other documents expressly referred to in
-                    them, constitute the entire agreement between you and NESZN in relation to your use of
+                    them, constitute the entire agreement between you and AnyHJS in relation to your use of
                     the Site and supersede any prior agreements, understandings or arrangements (whether
                     oral or written) between us in respect of the subject matter.
                 </p>
