@@ -25,7 +25,7 @@ export function ContactUs() {
     form.reset();
     setStatusBanner({
       type: "success",
-      message: "Thanks — your message has been submitted in this demo experience.",
+      message: "Thanks — your message has been received.",
     });
     setIsSubmitting(false);
   };
@@ -40,7 +40,7 @@ export function ContactUs() {
       <GenericPageSection
         label="Support"
         title="Get in Touch with AnyHJS"
-        subtitle="Have a question, some feedback or an idea to share? Use the form below to show how contacting us would work."
+        subtitle="Have a question, some feedback or an idea to share? Send us a message below."
       >
         <style>
           {`
@@ -64,7 +64,7 @@ export function ContactUs() {
         >
           <div className="relative z-[1] flex items-center justify-between gap-4">
             <p className="m-0 text-sm text-black/70">
-              Enter a few details to preview the complete AnyHJS contact-form experience.
+              Enter your details and tell us how we can help.
             </p>
           </div>
 
