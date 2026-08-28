@@ -20,7 +20,7 @@ export function HomePage() {
         <div>
             <HeroSection />
             <CircleLogo />
-            <FeaturedProducts main_title="New Collection" sub_title="Our Latest Collection">
+            <FeaturedProducts main_title="Fresh Arrivals" sub_title="Explore the latest AnyHJS looks">
                 <FeaturedProductsItem imageSrc={productImg1} description="Yelliworld Windcheater Tech & Combat Trouser" price="£254.95" />
                 <FeaturedProductsItem imageSrc={productImg2} description="Supreme x Martin Wong & Essentials" price="£169.00" />
                 <FeaturedProductsItem imageSrc={productImg3} description="MISBHV & Hugo Boss" price="£195.00" />
