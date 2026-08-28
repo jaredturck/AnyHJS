@@ -43,14 +43,14 @@ export function Login({ setAuth, auth }: LoginProps) {
   if (auth.isAuthenticated) {
     return (
       <div className="pt-16">
-        <GenericPageSection label="Account" title="You’re already logged in" subtitle="You can manage your details, orders and preferences from your account.">
+        <GenericPageSection label="Account" title="You’re signed in" subtitle="Head to your account area to view your details, orders and preferences.">
           <div className={panelClass}>
             <div className="relative z-10 flex items-center justify-between gap-4">
-              <p className={hintClass}>You’re currently signed in to AnyHJS.</p>
+              <p className={hintClass}>Your AnyHJS account session is already active.</p>
             </div>
 
             <Link to="/account" className={submitClass}>
-              <span className="text-black">Go to my account</span>
+              <span className="text-black">Open my account</span>
             </Link>
           </div>
         </GenericPageSection>
@@ -71,15 +71,15 @@ export function Login({ setAuth, auth }: LoginProps) {
 
   return (
     <div className="pt-16">
-      <GenericPageSection label="Account" title="Login to Your Account" subtitle="Access your personalised wardrobe, saved favourites and orders.">
+      <GenericPageSection label="Account" title="Sign In to AnyHJS" subtitle="Open your account area for saved looks, order information and personal settings.">
         <form className={panelClass} onSubmit={handleSubmit} noValidate>
           <div className="relative z-10 flex items-center justify-between gap-4">
-            <p className={hintClass}>Use the email address or username you registered with AnyHJS.</p>
+            <p className={hintClass}>Enter your account details below to continue.</p>
           </div>
 
           <div className={fieldClass}>
             <label htmlFor="login-email" className={labelClass}>Email or username</label>
-            <input id="login-email" name="email" type="text" autoComplete="username" className={inputClass} placeholder="you@example.com or your username" />
+            <input id="login-email" name="email" type="text" autoComplete="username" className={inputClass} placeholder="Email address or username" />
           </div>
 
           <div className={fieldClass}>
@@ -92,19 +92,19 @@ export function Login({ setAuth, auth }: LoginProps) {
                   type="checkbox"
                   className="relative h-[14px] w-[14px] appearance-none rounded-[4px] border border-[rgba(26,26,26,0.20)] bg-white/90 transition-[border-color,background-color,box-shadow,transform] duration-150 checked:border-[rgba(189,255,0,0.85)] checked:bg-[rgba(189,255,0,0.92)] checked:shadow-[0_0_0_3px_rgba(189,255,0,0.18)] checked:after:content-[''] checked:after:absolute checked:after:inset-[2px] checked:after:rounded-[3px] checked:after:bg-[rgba(26,26,26,0.90)] focus-visible:outline-none focus-visible:shadow-[0_0_0_3px_rgba(189,255,0,0.18),0_0_0_1px_rgba(189,255,0,0.35)]"
                 />
-                <span className="text-[rgba(26,26,26,0.78)]">Remember me</span>
+                <span className="text-[rgba(26,26,26,0.78)]">Keep me signed in</span>
               </label>
 
-              <Link to="/forgot-password" className={underlineLinkClass}>Forgot password?</Link>
+              <Link to="/forgot-password" className={underlineLinkClass}>Reset password</Link>
             </div>
           </div>
 
           <button type="submit" className={submitClass} disabled={isSubmitting}>
-            <span>{isSubmitting ? "Logging in..." : "Log in"}</span>
+            <span>{isSubmitting ? "Signing in..." : "Sign in"}</span>
           </button>
 
           <p className="relative z-10 mt-4 text-center text-[0.85rem] text-[rgba(26,26,26,0.70)]">
-            New to AnyHJS? <Link to="/register" className={footerLinkClass}>Create an account</Link>
+            Don’t have an account? <Link to="/register" className={footerLinkClass}>Register here</Link>
           </p>
         </form>
       </GenericPageSection>
@@ -129,30 +129,30 @@ export function Register({ setAuth }: RegisterProps) {
 
   return (
     <div className="pt-16">
-      <GenericPageSection label="Account" title="Join AnyHJS Today" subtitle="Save your favourites, track orders and unlock personalised outfits.">
+      <GenericPageSection label="Account" title="Create an AnyHJS Account" subtitle="Set up your account view for favourites, orders and personalised fashion features.">
         <form className={panelClass} onSubmit={handleSubmit} noValidate>
           <div className="relative z-10 flex items-center justify-between gap-4">
-            <p className={hintClass}>Fill in your details below to get started with AnyHJS.</p>
+            <p className={hintClass}>Add your details below to preview the AnyHJS account experience.</p>
           </div>
 
           <div className={fieldClass}>
             <label htmlFor="register-name" className={labelClass}>Name</label>
-            <input id="register-name" name="name" type="text" autoComplete="name" className={inputClass} placeholder="Your name" />
+            <input id="register-name" name="name" type="text" autoComplete="name" className={inputClass} placeholder="Enter your name" />
           </div>
 
           <div className={fieldClass}>
             <label htmlFor="register-email" className={labelClass}>Email address</label>
-            <input id="register-email" name="email" type="email" autoComplete="email" className={inputClass} placeholder="you@example.com" />
+            <input id="register-email" name="email" type="email" autoComplete="email" className={inputClass} placeholder="name@example.com" />
           </div>
 
           <div className={fieldClass}>
             <label htmlFor="register-password" className={labelClass}>Password</label>
-            <input id="register-password" name="password" type="password" autoComplete="new-password" className={inputClass} placeholder="Create a password" />
+            <input id="register-password" name="password" type="password" autoComplete="new-password" className={inputClass} placeholder="Choose a password" />
           </div>
 
           <div className={fieldClass}>
             <label htmlFor="register-password-confirm" className={labelClass}>Confirm password</label>
-            <input id="register-password-confirm" name="passwordConfirm" type="password" autoComplete="new-password" className={inputClass} placeholder="Repeat your password" />
+            <input id="register-password-confirm" name="passwordConfirm" type="password" autoComplete="new-password" className={inputClass} placeholder="Enter the password again" />
           </div>
 
           <div className="relative z-10 flex items-start gap-2">
@@ -170,11 +170,11 @@ export function Register({ setAuth }: RegisterProps) {
           </div>
 
           <button type="submit" className={submitClass} disabled={isSubmitting}>
-            <span>{isSubmitting ? "Creating account..." : "Create account"}</span>
+            <span>{isSubmitting ? "Setting up account..." : "Create account"}</span>
           </button>
 
           <p className="relative z-10 mt-4 text-center text-[0.85rem] text-[rgba(26,26,26,0.70)]">
-            Already have an account? <Link to="/login" className={footerLinkClass}>Log in</Link>
+            Already registered? <Link to="/login" className={footerLinkClass}>Sign in</Link>
           </p>
         </form>
       </GenericPageSection>
@@ -194,29 +194,29 @@ export function ForgotPassword() {
 
     await demoDelay();
     form.reset();
-    setStatusMessage("If an account exists for that email, a reset link has been sent.");
+    setStatusMessage("If the email matches an account, password-reset instructions have been sent.");
     setIsSubmitting(false);
   };
 
   return (
     <div className="pt-16">
-      <GenericPageSection label="Account" title="Reset Your Password" subtitle="Enter the email linked to your AnyHJS account and we’ll send you a reset link.">
+      <GenericPageSection label="Account" title="Password Help" subtitle="Enter your account email to request instructions for choosing a new password.">
         <form className={panelClass} onSubmit={handleSubmit} noValidate>
           <div className="relative z-10 flex items-center justify-between gap-4">
-            <p className={hintClass}>If there’s an AnyHJS account associated with this email, you’ll receive a message with a secure link to create a new password.</p>
+            <p className={hintClass}>Submit the email associated with the account and the reset flow will continue from there.</p>
           </div>
 
           {statusMessage && <div className={successBannerClass}>{statusMessage}</div>}
 
           <div className={fieldClass}>
             <label htmlFor="forgot-email" className={labelClass}>Email address</label>
-            <input id="forgot-email" name="email" type="email" autoComplete="email" className={inputClass} placeholder="you@example.com" />
+            <input id="forgot-email" name="email" type="email" autoComplete="email" className={inputClass} placeholder="name@example.com" />
           </div>
 
-          <button type="submit" className={submitClass} disabled={isSubmitting}><span>{isSubmitting ? "Sending reset link..." : "Send reset link"}</span></button>
+          <button type="submit" className={submitClass} disabled={isSubmitting}><span>{isSubmitting ? "Requesting link..." : "Request reset link"}</span></button>
 
           <p className="relative z-10 mt-4 text-center text-[0.85rem] text-[rgba(26,26,26,0.70)]">
-            Remember your password? <Link to="/login" className={footerLinkClass}>Back to login</Link>
+            Ready to sign in? <Link to="/login" className={footerLinkClass}>Return to login</Link>
           </p>
         </form>
       </GenericPageSection>
@@ -236,31 +236,31 @@ export function ChangePassword() {
 
     await demoDelay();
     form.reset();
-    setStatusMessage("Your password has been updated.");
+    setStatusMessage("Your new password has been accepted.");
     setIsSubmitting(false);
   };
 
   return (
     <div className="pt-16">
-      <GenericPageSection label="Account" title="Change Your Password" subtitle="Update your password securely using your current login details.">
+      <GenericPageSection label="Account" title="Update Your Password" subtitle="Use this form to preview the password-change flow for your AnyHJS account.">
         <form className={panelClass} onSubmit={handleSubmit} noValidate>
           <div className="relative z-10 flex items-center justify-between gap-4">
-            <p className={hintClass}>Enter your current password and then choose a new one. We’ll verify your existing password before updating it.</p>
+            <p className={hintClass}>Enter the existing password first, then provide the new password you want to use.</p>
           </div>
 
           {statusMessage && <div className={successBannerClass}>{statusMessage}</div>}
 
           <div className={fieldClass}>
             <label htmlFor="change-current-password" className={labelClass}>Current password</label>
-            <input id="change-current-password" name="currentPassword" type="password" autoComplete="current-password" className={inputClass} placeholder="Enter your current password" />
+            <input id="change-current-password" name="currentPassword" type="password" autoComplete="current-password" className={inputClass} placeholder="Current password" />
           </div>
 
           <div className={fieldClass}>
             <label htmlFor="change-new-password" className={labelClass}>New password</label>
-            <input id="change-new-password" name="newPassword" type="password" autoComplete="new-password" className={inputClass} placeholder="Create a new password" />
+            <input id="change-new-password" name="newPassword" type="password" autoComplete="new-password" className={inputClass} placeholder="New password" />
           </div>
 
-          <button type="submit" className={submitClass} disabled={isSubmitting}><span>{isSubmitting ? "Changing password..." : "Change password"}</span></button>
+          <button type="submit" className={submitClass} disabled={isSubmitting}><span>{isSubmitting ? "Updating password..." : "Update password"}</span></button>
         </form>
       </GenericPageSection>
     </div>
@@ -279,16 +279,16 @@ export function ResetEmail() {
 
     await demoDelay();
     form.reset();
-    setStatusMessage("Your email address has been updated.");
+    setStatusMessage("Your account email has been changed.");
     setIsSubmitting(false);
   };
 
   return (
     <div className="pt-16">
-      <GenericPageSection label="Account" title="Change Your Email Address" subtitle="Update the primary email linked to your AnyHJS account.">
+      <GenericPageSection label="Account" title="Update Your Email" subtitle="Change the primary email address shown as part of your AnyHJS account.">
         <form className={panelClass} onSubmit={handleSubmit} noValidate>
           <div className="relative z-10 flex items-center justify-between gap-4">
-            <p className={hintClass}>Enter the email currently on your account and the new email you’d like to use. We’ll update your details once we’ve confirmed your existing email.</p>
+            <p className={hintClass}>Provide the current account email and the replacement address you would like to use.</p>
           </div>
 
           {statusMessage && <div className={successBannerClass}>{statusMessage}</div>}
@@ -303,7 +303,7 @@ export function ResetEmail() {
             <input id="reset-email-new" name="newEmail" type="email" autoComplete="email" className={inputClass} placeholder="new@example.com" />
           </div>
 
-          <button type="submit" className={submitClass} disabled={isSubmitting}><span>{isSubmitting ? "Changing email..." : "Change email"}</span></button>
+          <button type="submit" className={submitClass} disabled={isSubmitting}><span>{isSubmitting ? "Updating email..." : "Update email"}</span></button>
         </form>
       </GenericPageSection>
     </div>
