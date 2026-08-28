@@ -214,18 +214,18 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
           <div className="max-w-[44rem]">
             <div className="mb-2 inline-flex items-center gap-2 text-[0.9rem] text-black/55">
               <span className="h-[0.6rem] w-[0.6rem] rounded-full bg-[#BDFF00] shadow-[0_0_0_6px_rgba(189,255,0,0.18)]" />
-              Review your checkout
+              Secure checkout
             </div>
 
             <h1 className="m-0 text-[2.2rem] tracking-[-0.03em] max-[600px]:text-[1.9rem]">Checkout</h1>
 
             <p className="m-0 leading-[1.5] text-[#5C5C5C]">
-              Confirm your contact, delivery and payment choices below. The service fee shown on this order is <strong>£0.99</strong>.
+              Review your details below. Your service fee is <strong>£0.99</strong>.
             </p>
           </div>
 
           <div className="flex items-center gap-3 rounded-[1.2rem] border border-black/5 bg-white/75 px-[0.9rem] py-3 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur-[10px] max-[640px]:w-full max-[640px]:justify-between max-[480px]:flex-col max-[480px]:items-start">
-            {["Delivery tracking", "Straightforward returns", "Protected payment flow"].map((t) => (
+            {["Tracked delivery", "Easy returns", "Encrypted payments"].map((t) => (
               <div key={t} className="inline-flex items-center gap-2 text-[0.9rem] text-black/70">
                 <span className="inline-flex h-[1.35rem] w-[1.35rem] items-center justify-center rounded-full border border-black/10 bg-[rgba(189,255,0,0.25)] font-bold">
                   ✓
@@ -244,7 +244,7 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
                 <div className="mb-[0.9rem] flex items-baseline justify-between gap-4 max-[480px]:flex-col max-[480px]:items-start">
                   <h2 className="m-0 text-[1.05rem] tracking-[-0.01em]">Contact</h2>
                   <span className="inline-flex h-7 items-center rounded-full border border-black/10 bg-[rgba(189,255,0,0.22)] px-3 text-[0.85rem] font-bold text-black/80">
-                    Account details ready
+                    Account linked
                   </span>
                 </div>
 
@@ -284,7 +284,7 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
 
                 <label className="mt-2 flex items-start gap-2 text-[0.95rem] text-black/70">
                   <input type="checkbox" className="mt-[0.2rem] accent-[#BDFF00]" />
-                  <span>Send me delivery updates and occasional AnyHJS news (optional)</span>
+                  <span>Order updates and AnyHJS news (optional)</span>
                 </label>
               </section>
 
