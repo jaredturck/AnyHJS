@@ -7,26 +7,26 @@ export function PrivacyPolicy() {
         <div>
             <ClothingBanner
                 title="Privacy Policy"
-                subtitle="How we collect, use and protect your data"
+                subtitle="How AnyHJS handles and protects personal data"
                 img_src={banner1}
             />
 
             <GenericPageSection
                 label="Legal"
                 title="Privacy Policy"
-                subtitle="This Privacy Policy explains how NESZN handles your personal data and your rights in relation to it."
+                subtitle="This Privacy Policy explains how AnyHJS handles your personal data and your rights in relation to it."
             >
                 <h1>Privacy Policy</h1>
 
                 <p>
-                    This Privacy Policy explains how NESZN ("NESZN", "we", "us" or "our") collects, uses,
+                    This Privacy Policy explains how AnyHJS ("AnyHJS", "we", "us" or "our") collects, uses,
                     discloses and protects personal data in connection with our website, online store and
                     related services (together, the "Services"). It also explains your rights in relation
                     to your personal data and how to exercise them.
                 </p>
 
                 <p>
-                    NESZN is committed to protecting the privacy and security of your personal data and to
+                    AnyHJS is committed to protecting the privacy and security of your personal data and to
                     processing it in accordance with applicable data protection law, including the UK
                     General Data Protection Regulation ("UK GDPR"), the Data Protection Act 2018 and any
                     successor or related legislation in the United Kingdom.
@@ -41,25 +41,14 @@ export function PrivacyPolicy() {
                 <h2>1. Data Controller and Contact Details</h2>
 
                 <p>
-                    For the purposes of data protection law, NESZN is the "data controller" of your
+                    For the purposes of data protection law, AnyHJS is the "data controller" of your
                     personal data. This means that we determine the purposes and means of processing your
                     personal data in connection with the Services.
                 </p>
 
-                <p>Our contact details are:</p>
-
                 <p>
-                    NESZN
-                    <br />
-                    [Registered company name, if different]
-                    <br />
-                    [Registered office address]
-                    <br />
-                    [Postal code, Country]
-                    <br />
-                    Email: <a href="mailto:[privacy@email.address]">[privacy@email.address]</a>
-                    <br />
-                    Telephone: [contact number]
+                    To contact us about privacy or data protection, please use the contact details or form
+                    available on our Contact page.
                 </p>
 
                 <p>
@@ -543,7 +532,7 @@ export function PrivacyPolicy() {
                 </p>
 
                 <p>
-                    <em>Last updated: [insert date]</em>
+                    <em>Last updated: 28 August 2026</em>
                 </p>
             </GenericPageSection>
         </div>
