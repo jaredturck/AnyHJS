@@ -7,36 +7,36 @@ export function EngageWithFollowers() {
     return (
         <div>
             <ClothingBanner
-                title="Engage with AnyHJS"
-                subtitle="Follow, connect and be part of the community"
+                title="Connect with AnyHJS"
+                subtitle="Follow the project, join the conversation and stay in the loop"
                 img_src={banner1}
             />
 
             <GenericPageSection
                 label="Community"
-                title="Engage with AnyHJS"
-                subtitle="Discover all the ways you can follow, contact and connect with us across our social channels."
+                title="Stay Connected with AnyHJS"
+                subtitle="Explore the places where we plan to share updates, outfit ideas, product news and community content."
             >
-                <h1>Engage with AnyHJS</h1>
+                <h1>Connect with AnyHJS</h1>
 
                 <p>
-                    At AnyHJS, fashion is a conversation. We’re more than just a place to shop – we’re a
-                    community of style lovers, creators and brands from all over the world. Follow us, talk
-                    to us, and stay up to date with the latest drops, trends and outfit ideas across all of
-                    our social media channels.
+                    AnyHJS is intended to be more than a catalogue of clothing. We want the project to have
+                    an active community around style, creators and the brands people are discovering. Our
+                    social channels are where we plan to share new collections, outfit inspiration, product
+                    developments and the ideas shaping the platform as it grows.
                 </p>
 
                 <p>
-                    Because we bring hundreds of brands together in one place, you can discover new labels,
-                    compare styles from big names like Nike and Adidas, and buy full outfits in a single,
-                    easy checkout. Our AI-powered recommendations help you find pieces you’ll actually wear,
-                    while our social channels inspire you with fresh looks every day.
+                    By bringing products from many labels into one place, AnyHJS is designed to make it
+                    easier to explore different styles and put complete looks together. Our future AI tools
+                    are intended to make that discovery more personal, while the community side of AnyHJS
+                    gives us a place to share ideas, hear feedback and highlight how people style their finds.
                 </p>
 
                 <figure>
                     <img
                         src={engageImage}
-                        alt="AnyHJS community and social media banner"
+                        alt="AnyHJS fashion and community preview"
                         className="w-full rounded-xl"
                         loading="lazy"
                         decoding="async"
@@ -45,12 +45,12 @@ export function EngageWithFollowers() {
 
                 <hr />
 
-                <h2>Connect with Us on Social Media</h2>
+                <h2>Where to Follow AnyHJS</h2>
 
                 <p>
-                    Follow AnyHJS on your favourite platforms to see the latest fashion trends, outfit
-                    inspiration, behind-the-scenes content, and community spotlights. Join the conversation,
-                    tag us in your looks, and let us know what you want to see more of.
+                    Different channels will be used for different kinds of content, from quick outfit ideas
+                    and development updates to longer styling features and community posts. Follow whichever
+                    platforms suit you, share your own looks, and keep an eye out for new AnyHJS announcements.
                 </p>
 
                 <div className="overflow-x-auto">
@@ -58,98 +58,95 @@ export function EngageWithFollowers() {
                         <thead>
                             <tr>
                                 <th>Platform</th>
-                                <th>Handle</th>
-                                <th>What You’ll Find</th>
+                                <th>AnyHJS Presence</th>
+                                <th>What We Plan to Share</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Instagram</td>
-                                <td>@AnyHJS (placeholder)</td>
-                                <td>Daily outfit inspiration, drops, styling reels and community features.</td>
+                                <td>AnyHJS</td>
+                                <td>Outfit inspiration, collection highlights, styling reels and community posts.</td>
                             </tr>
                             <tr>
                                 <td>TikTok</td>
-                                <td>@AnyHJS (placeholder)</td>
-                                <td>Short-form styling tips, trend breakdowns and behind-the-scenes content.</td>
+                                <td>AnyHJS</td>
+                                <td>Short styling ideas, trend commentary and quick behind-the-scenes updates.</td>
                             </tr>
                             <tr>
                                 <td>YouTube</td>
-                                <td>AnyHJS (placeholder)</td>
-                                <td>Long-form lookbooks, styling guides, interviews and fashion deep dives.</td>
+                                <td>AnyHJS</td>
+                                <td>Longer lookbooks, feature previews, styling guides and fashion discussions.</td>
                             </tr>
                             <tr>
                                 <td>Pinterest</td>
-                                <td>@AnyHJS (placeholder)</td>
-                                <td>Curated moodboards, outfit boards and seasonal trend collections.</td>
+                                <td>AnyHJS</td>
+                                <td>Seasonal moodboards, outfit references and curated style collections.</td>
                             </tr>
                             <tr>
                                 <td>Twitter / X</td>
-                                <td>@AnyHJS (placeholder)</td>
-                                <td>Real-time updates, news, drops and quick community chats.</td>
+                                <td>AnyHJS</td>
+                                <td>Project updates, new releases, announcements and shorter community conversations.</td>
                             </tr>
                             <tr>
                                 <td>Discord</td>
-                                <td>AnyHJS Community (placeholder)</td>
-                                <td>Chat with other members, share outfits, vote on future features and drops.</td>
+                                <td>AnyHJS Community</td>
+                                <td>A future space for outfit sharing, feature feedback and community discussion.</td>
                             </tr>
                             <tr>
                                 <td>Snapchat</td>
-                                <td>AnyHJS (placeholder)</td>
-                                <td>Quick sneak peeks, early looks and exclusive behind-the-scenes moments.</td>
+                                <td>AnyHJS</td>
+                                <td>Quick previews, informal updates and early looks at upcoming ideas.</td>
                             </tr>
                             <tr>
                                 <td>News Section</td>
-                                <td>On our website</td>
-                                <td>Official announcements, feature updates, collaborations and brand news.</td>
+                                <td>On the AnyHJS website</td>
+                                <td>Official product updates, collaboration news and project announcements.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <p>
-                    Please replace the placeholder handles above with your actual social media usernames and
-                    links once they are finalised.
+                    Social channels and availability may change as the project develops. The AnyHJS website
+                    will remain the main place for confirmed information about features and future releases.
                 </p>
 
                 <hr />
 
-                <h2>Why Engage with AnyHJS?</h2>
+                <h2>Why Join the Conversation?</h2>
 
                 <p>
-                    Our community is at the heart of everything we do. By engaging with us online, you’ll be
-                    the first to know about new brands joining the platform, exclusive outfit drops, limited
-                    collections and special promotions. You’ll also see how other users style their pieces,
-                    and you can share your own fits for a chance to be featured.
+                    Community feedback can help shape what AnyHJS becomes. Following the project gives you a
+                    way to see new ideas early, discover brands and outfits we are featuring, and keep up with
+                    future collections, experiments and product releases as they are developed.
                 </p>
 
                 <p>
-                    Because we aggregate clothing from hundreds of different brands, you can discover a
-                    complete look – shoes, trousers, hoodies, accessories and more – without jumping between
-                    multiple websites. Our AI algorithms learn what you like and help surface the pieces and
-                    outfits that match your style, budget and wardrobe, all in one place and with flexible
-                    payment options at checkout.
+                    The longer-term AnyHJS experience is centred on discovering clothing from different labels
+                    without having to search each store separately. Alongside that, planned AI-assisted tools
+                    will help surface outfits and pieces around style, budget and wardrobe preferences. Our
+                    social content is intended to complement that experience with inspiration and conversation.
                 </p>
 
                 <hr />
 
-                <h2>Get in Touch</h2>
+                <h2>Talk to the AnyHJS Team</h2>
 
                 <p>
-                    Got a question, collaboration idea, or just want to say hi? We’d love to hear from you.
-                    You can contact us directly via our <strong>Contact</strong> page on the website or send
-                    us a message through any of our social platforms listed above.
+                    Have feedback, a question or an idea for working together? You can use the AnyHJS
+                    <strong> Contact</strong> page to send a message. Social channels can also be used for
+                    general conversation and to follow public updates from the project.
                 </p>
 
                 <p>
-                    For support about an existing order, please include your order number and any relevant
-                    details so we can help you as quickly as possible. For brand and influencer partnership
-                    enquiries, please reach out via our business email or contact form and a member of the
-                    team will get back to you.
+                    For collaboration, creator or brand enquiries, include a short explanation of what you
+                    have in mind and any useful links or background. That gives us enough context to understand
+                    the idea and consider where it could fit with the future direction of AnyHJS.
                 </p>
 
                 <p>
-                    Join the AnyHJS community today, follow us online, and be part of the future of fashion.
+                    Follow the project, share your style and help shape the community around AnyHJS.
                 </p>
             </GenericPageSection>
         </div>
