@@ -182,7 +182,7 @@ export default function ProductBundle() {
         <div className="mt-0.5">
           <div className="mb-2 font-extrabold text-white/85">Description</div>
           <p className="m-0 max-w-[52ch] text-sm leading-[1.6] text-[#b9b9b9]">
-            Lorem ipsum dolor sit amet consectetur. Pharetra ullamcorper ornare consequat sed. Sed magna arcu nunc pellentesque eget sit feugiat sed accumsan. Id viverra erat.
+            A coordinated outerwear and trouser set with a technical, utility-led finish. Choose the colour and size of each piece separately to build the combination that works for you.
           </p>
         </div>
 
