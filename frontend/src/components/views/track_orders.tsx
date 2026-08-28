@@ -7,20 +7,20 @@ export function TrackMyOrder() {
         <div>
             <ClothingBanner
                 title="Track Your Order"
-                subtitle="Use your courier tracking number to check your delivery status."
+                subtitle="Use the courier details from your dispatch message to follow your parcel."
                 img_src={banner1}
             />
 
             <GenericPageSection
                 label="Orders"
-                title="Track My Order"
-                subtitle="We partner with several couriers. Use the tracking number from your dispatch email and choose the matching courier below."
+                title="Order Tracking"
+                subtitle="Find the courier named in your dispatch confirmation, then use the matching tracking service below."
             >
                 <p>
-                    Your shipping confirmation email from AnyHJS will show the{" "}
-                    <strong>courier name</strong> (for example Royal Mail, DHL or FedEx) and
-                    a <strong>tracking number</strong>. Select the correct courier below and
-                    we’ll send you straight to their tracking page.
+                    An AnyHJS dispatch confirmation will identify the{" "}
+                    <strong>delivery company</strong> used for the parcel, such as Royal Mail, DHL or FedEx,
+                    together with a <strong>tracking number</strong>. Match those details to the courier below
+                    to open the correct tracking service.
                 </p>
 
                 <div className="mt-7 text-[var(--soft-black)]">
@@ -31,11 +31,11 @@ export function TrackMyOrder() {
                                 Royal Mail
                             </h2>
                             <p className="relative z-[1] m-0">
-                                Use this option if your dispatch email shows{" "}
-                                <strong>Royal Mail</strong> as the courier.
+                                Choose this link when your dispatch information names{" "}
+                                <strong>Royal Mail</strong> as the carrier.
                             </p>
                             <p className="relative z-[1] m-0 text-[0.9rem] leading-relaxed text-[rgba(26,26,26,0.70)]">
-                                Typical format: a mix of letters and numbers, e.g.{" "}
+                                A common format combines letters and numbers, for example{" "}
                                 <em>AA123456789GB</em>.
                             </p>
                             <a
@@ -44,7 +44,7 @@ export function TrackMyOrder() {
                                 rel="noopener noreferrer"
                                 className="relative z-[1] mt-4 inline-flex w-fit items-center justify-center rounded-full border border-[rgba(26,26,26,0.14)] bg-[linear-gradient(180deg,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.70)_100%)] px-[1.15rem] py-[0.65rem] text-[0.85rem] font-extrabold uppercase tracking-[0.12em] text-[rgba(26,26,26,0.92)] shadow-[0_12px_26px_rgba(0,0,0,0.10),0_2px_10px_rgba(0,0,0,0.06)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-[2px] hover:border-[rgba(189,255,0,0.55)] hover:shadow-[0_18px_40px_rgba(0,0,0,0.14),0_6px_16px_rgba(0,0,0,0.08)] active:translate-y-0 active:shadow-[0_12px_26px_rgba(0,0,0,0.10),0_2px_10px_rgba(0,0,0,0.06)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[rgba(189,255,0,0.9)] before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:bg-[radial-gradient(circle_at_20%_20%,rgba(189,255,0,0.18),transparent_55%),linear-gradient(135deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.35)_35%,rgba(255,255,255,0)_70%)] before:opacity-75"
                             >
-                                Track with Royal Mail
+                                Open Royal Mail Tracking
                             </a>
                         </section>
 
@@ -54,11 +54,11 @@ export function TrackMyOrder() {
                                 DHL
                             </h2>
                             <p className="relative z-[1] m-0">
-                                Choose this if your confirmation shows{" "}
-                                <strong>DHL</strong> as the delivery partner.
+                                Use this option when the dispatch confirmation lists{" "}
+                                <strong>DHL</strong> as the delivery provider.
                             </p>
                             <p className="relative z-[1] m-0 text-[0.9rem] leading-relaxed text-[rgba(26,26,26,0.70)]">
-                                Typical format: 10+ digits, or starting with{" "}
+                                Tracking references are often 10 or more digits, or begin with{" "}
                                 <em>JD</em> followed by numbers.
                             </p>
                             <a
@@ -67,7 +67,7 @@ export function TrackMyOrder() {
                                 rel="noopener noreferrer"
                                 className="relative z-[1] mt-4 inline-flex w-fit items-center justify-center rounded-full border border-[rgba(26,26,26,0.14)] bg-[linear-gradient(180deg,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.70)_100%)] px-[1.15rem] py-[0.65rem] text-[0.85rem] font-extrabold uppercase tracking-[0.12em] text-[rgba(26,26,26,0.92)] shadow-[0_12px_26px_rgba(0,0,0,0.10),0_2px_10px_rgba(0,0,0,0.06)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-[2px] hover:border-[rgba(189,255,0,0.55)] hover:shadow-[0_18px_40px_rgba(0,0,0,0.14),0_6px_16px_rgba(0,0,0,0.08)] active:translate-y-0 active:shadow-[0_12px_26px_rgba(0,0,0,0.10),0_2px_10px_rgba(0,0,0,0.06)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[rgba(189,255,0,0.9)] before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:bg-[radial-gradient(circle_at_20%_20%,rgba(189,255,0,0.18),transparent_55%),linear-gradient(135deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.35)_35%,rgba(255,255,255,0)_70%)] before:opacity-75"
                             >
-                                Track with DHL
+                                Open DHL Tracking
                             </a>
                         </section>
 
@@ -77,11 +77,11 @@ export function TrackMyOrder() {
                                 FedEx
                             </h2>
                             <p className="relative z-[1] m-0">
-                                Select this option if your order was shipped with{" "}
+                                Follow this link if the parcel was sent using{" "}
                                 <strong>FedEx</strong>.
                             </p>
                             <p className="relative z-[1] m-0 text-[0.9rem] leading-relaxed text-[rgba(26,26,26,0.70)]">
-                                Typical format: a 12–14 digit numeric code.
+                                A typical FedEx reference is a 12–14 digit numeric code.
                             </p>
                             <a
                                 href="https://www.fedex.com/fedextrack"
@@ -89,15 +89,15 @@ export function TrackMyOrder() {
                                 rel="noopener noreferrer"
                                 className="relative z-[1] mt-4 inline-flex w-fit items-center justify-center rounded-full border border-[rgba(26,26,26,0.14)] bg-[linear-gradient(180deg,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.70)_100%)] px-[1.15rem] py-[0.65rem] text-[0.85rem] font-extrabold uppercase tracking-[0.12em] text-[rgba(26,26,26,0.92)] shadow-[0_12px_26px_rgba(0,0,0,0.10),0_2px_10px_rgba(0,0,0,0.06)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-[2px] hover:border-[rgba(189,255,0,0.55)] hover:shadow-[0_18px_40px_rgba(0,0,0,0.14),0_6px_16px_rgba(0,0,0,0.08)] active:translate-y-0 active:shadow-[0_12px_26px_rgba(0,0,0,0.10),0_2px_10px_rgba(0,0,0,0.06)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[rgba(189,255,0,0.9)] before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:bg-[radial-gradient(circle_at_20%_20%,rgba(189,255,0,0.18),transparent_55%),linear-gradient(135deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.35)_35%,rgba(255,255,255,0)_70%)] before:opacity-75"
                             >
-                                Track with FedEx
+                                Open FedEx Tracking
                             </a>
                         </section>
                     </div>
 
                     <p className="m-0 text-[0.92rem] leading-[1.7] text-[rgba(26,26,26,0.70)]">
-                        Can&apos;t see which courier was used? Check your shipping
-                        confirmation email from AnyHJS – it includes the courier name
-                        and tracking number for your parcel.
+                        Not sure which courier to choose? The AnyHJS dispatch
+                        confirmation should include both the delivery company and the
+                        tracking reference attached to your parcel.
                     </p>
                 </div>
             </GenericPageSection>
