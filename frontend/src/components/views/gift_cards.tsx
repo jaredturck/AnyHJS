@@ -7,39 +7,37 @@ export function GiftCards() {
         <div>
             <ClothingBanner
                 title="Gift Cards"
-                subtitle="Get Latest Gift Cards"
+                subtitle="A flexible way to give someone their own choice"
                 img_src={banner1}
             />
 
             <GenericPageSection
                 label="Gift Cards"
-                title="Give the gift of choice"
-                subtitle="How our digital and physical gift cards work, and how to redeem them."
+                title="Give them room to choose"
+                subtitle="A quick guide to using and redeeming AnyHJS gift cards."
             >
                 <p>
-                    Give the gift of choice with our gift cards. Instead of guessing their size,
-                    style, or favourite brand, you can simply load up a gift card and let them
-                    explore thousands of clothing options from a huge range of top brands—all in
-                    one place. Whether they’re into streetwear, minimal basics, bold statement
-                    pieces or designer labels, our gift cards can be used across the full
-                    selection available on our store.
+                    A gift card lets someone choose the pieces that suit them instead of making
+                    you guess their size, preferred label or personal style. The idea is simple:
+                    add value to the card and let them browse clothing from the range of brands
+                    available through AnyHJS. Whether they prefer relaxed basics, streetwear,
+                    standout pieces or something more premium, the choice stays with them.
                 </p>
 
                 <p>
-                    Using a gift card at checkout is simple and secure. Just add your favourite
-                    pieces to your cart, choose “Gift Card” as your payment method, enter the
-                    card details, and you’re done—no need for a credit or debit card. It’s a
-                    flexible way to shop that works perfectly for budget-conscious buyers,
-                    younger shoppers, or anyone who prefers not to use traditional payment
-                    methods online.
+                    Where gift cards are available at checkout, redeeming one is straightforward.
+                    Add the items you want, select the gift-card payment option and enter the
+                    relevant card details. If the card balance covers the full order, no additional
+                    payment is needed; if not, the remaining amount can be paid using another
+                    supported method.
                 </p>
 
                 <p>
-                    Our gift cards make an ideal present for birthdays, holidays, graduations,
-                    or any moment worth celebrating. Instead of another generic voucher tied to
-                    a single brand, you’re giving access to an entire wardrobe’s worth of
-                    possibilities from countless clothing companies. It’s thoughtful, easy, and
-                    guaranteed to fit—because they choose exactly what they love.
+                    Gift cards can work for birthdays, celebrations, graduations or simply as an
+                    easy present when you know someone loves fashion but do not know exactly what
+                    they would pick. Rather than tying the recipient to one specific label, an
+                    AnyHJS gift card is designed to give them a wider selection and the freedom to
+                    choose something they will genuinely want to wear.
                 </p>
             </GenericPageSection>
         </div>

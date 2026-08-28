@@ -6,10 +6,10 @@ import { faqs } from "../../data/faqs";
 export function SupportCentre() {
   return (
     <div>
-      <ClothingBanner title="Support Centre" subtitle="How can we assist you today?" img_src={banner1} />
+      <ClothingBanner title="Support Centre" subtitle="Find answers and guidance for common questions" img_src={banner1} />
 
-      <GenericPageSection label="Support" title="Help & FAQs" subtitle="Find quick answers to common questions about orders, shipping, returns and more.">
-        <h2>Frequently Asked Questions</h2>
+      <GenericPageSection label="Support" title="Help & FAQs" subtitle="Quick information about delivery, returns, sizing, tracking and payment questions.">
+        <h2>Common Questions</h2>
 
         <div className="mt-6 space-y-4">
           {faqs.map((item, index) => (

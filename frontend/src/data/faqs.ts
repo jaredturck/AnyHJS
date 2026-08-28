@@ -1,26 +1,26 @@
 export const faqs = [
   {
-    question: "Do you offer refunds or returns?",
-    answer: "Yes, we do. If you’re not completely happy with your order, you can return eligible items within our returns window (subject to our returns policy) for a refund or store credit. Items must be unworn, unwashed, and with original tags attached.",
+    question: "What happens if I need to return something?",
+    answer: "Eligible items can be returned within the stated returns period if you change your mind or are not happy with your order. Returned clothing should be unworn and unwashed, with its original tags still attached. Depending on the returns policy, an approved return may be refunded or issued as store credit.",
   },
   {
-    question: "How long do orders take to ship?",
-    answer: "Shipping times depend on your location and the brand your items are coming from, but most orders are processed within a few business days. You’ll see an estimated delivery timeframe at checkout, and we’ll send you tracking details as soon as your order has been dispatched.",
+    question: "When should I expect my order to arrive?",
+    answer: "Delivery times vary by destination and by the brand supplying each item. Most orders are prepared within a few working days, and an estimated delivery window is shown during checkout. Tracking information is provided once the parcel has been dispatched.",
   },
   {
-    question: "How much does shipping cost?",
-    answer: "Shipping costs vary based on your location, order size, and delivery option. The final shipping fee will be clearly shown at checkout before you confirm your order, and we occasionally offer free shipping promotions which will also be highlighted there.",
+    question: "What will I pay for delivery?",
+    answer: "The delivery charge depends on factors such as your address, the size of the order and the shipping option selected. The amount is shown before an order is confirmed, so you can review the full cost at checkout. Free-delivery promotions may also be offered from time to time.",
   },
   {
-    question: "How do I know which size to order?",
-    answer: "Each product page includes a size guide or brand-specific sizing information to help you find the best fit. If you’re between sizes, we recommend checking the measurements and any fit notes, or contacting our support team for extra guidance.",
+    question: "How can I choose the right size?",
+    answer: "Product pages can include general or brand-specific sizing guidance to help you compare measurements and fit. If you fall between two sizes, check any available fit notes and measurements before deciding which option is likely to suit you best.",
   },
   {
-    question: "Can I track my order?",
-    answer: "Yes. Once your order has been shipped, you’ll receive a confirmation email with a tracking link. You can use this link to follow your parcel’s journey and get the most up-to-date delivery information.",
+    question: "Where can I follow my delivery?",
+    answer: "After an order has been dispatched, the shipping confirmation includes a tracking link or tracking number. Use those details with the named courier to check the latest progress of the parcel while it is on its way to you.",
   },
   {
-    question: "Can I use a gift card to pay for my order?",
-    answer: "Absolutely. At checkout, simply select gift card as your payment method and enter your gift card details. If your gift card doesn’t cover the full amount, you can pay the remaining balance with another available payment method.",
+    question: "Are gift cards accepted at checkout?",
+    answer: "Yes. Where gift-card payment is available, choose it during checkout and enter the card details when prompted. If the available balance is lower than the order total, the remaining amount can be covered using another supported payment method.",
   },
 ];

@@ -7,32 +7,30 @@ export function Refunds() {
         <div>
             <ClothingBanner
                 title="Returns & Refunds"
-                subtitle="How to return items and receive your refund"
+                subtitle="What to know if you need to send an item back"
                 img_src={banner1}
             />
 
             <GenericPageSection
                 label="Returns & Refunds"
-                title="Our Returns & Refunds Policy"
-                subtitle="Find out when you can return items, what condition they need to be in, and how we process your refund or store credit."
+                title="Returns and Refund Information"
+                subtitle="Check the return window, item-condition requirements and what happens after an approved return."
             >
                 <p>
-                    You can return most items within 30 days of receiving your order for a
-                    refund or store credit, as long as they are in their original condition.
-                    This means the clothing must be unworn, unwashed, with all original tags
-                    and packaging still attached, and free from any signs of wear, makeup,
-                    fragrance, or damage. Items marked as final sale or non-returnable, as
-                    well as certain hygiene-sensitive items (such as underwear or swimwear),
-                    may not be eligible for return.
+                    Most eligible items can be returned within 30 days of delivery for a refund
+                    or store credit, provided they are still in their original condition. Clothing
+                    should not have been worn or washed, and original tags and packaging should
+                    remain in place. Items showing wear, makeup, fragrance or damage may not be
+                    accepted. Final-sale products, items marked as non-returnable and certain
+                    hygiene-sensitive goods such as underwear or swimwear can also be excluded.
                 </p>
 
                 <p>
-                    To start a return, simply contact our customer support team or follow the
-                    instructions on our Returns page, and we’ll guide you through the process.
-                    Once your return is received and approved, we’ll issue your refund back to
-                    your original payment method or as store credit, depending on your
-                    preference and our policy. Store credit can be used to shop any item on
-                    our website, making it easy to find something you love.
+                    To arrange a return, follow the available returns instructions or contact the
+                    support team for guidance. Once the item has been received and the return is
+                    approved, the eligible amount can be sent back to the original payment method
+                    or provided as store credit where that option applies. Any store credit issued
+                    can then be used toward other products available through AnyHJS.
                 </p>
             </GenericPageSection>
         </div>
