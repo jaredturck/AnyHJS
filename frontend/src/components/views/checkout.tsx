@@ -95,8 +95,8 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
 
   const shippingOptions = useMemo<ShippingOption[]>(
     () => [
-      { id: "standard", label: "Standard (2–4 business days)", price: 4.99, hint: "Tracked delivery" },
-      { id: "express", label: "Express (1–2 business days)", price: 7.99, hint: "Priority handling" },
+      { id: "standard", label: "Standard (2–4 business days)", price: 4.99, hint: "Tracked standard service" },
+      { id: "express", label: "Express (1–2 business days)", price: 7.99, hint: "Faster priority service" },
     ],
     [],
   );
@@ -176,12 +176,12 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
     setAppliedDiscountCode("");
 
     if (!raw) {
-      setDiscountError("Enter a code to apply.");
+      setDiscountError("Add a discount code first.");
       return;
     }
 
     if (!isDiscountCode(raw)) {
-      setDiscountError("That code doesn’t look right. Try ANY10 or FREESHIP.");
+      setDiscountError("That code isn’t recognised. Try ANY10 or FREESHIP.");
       return;
     }
 
@@ -197,7 +197,7 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
     setIsPlacingOrder(false);
 
     // eslint-disable-next-line no-alert
-    alert("Order placed (demo). Hook this up to your backend/payment provider.");
+    alert("Thanks! Your order has been placed successfully.");
   }
 
   const canCheckout = cartItems.length > 0;
@@ -214,18 +214,18 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
           <div className="max-w-[44rem]">
             <div className="mb-2 inline-flex items-center gap-2 text-[0.9rem] text-black/55">
               <span className="h-[0.6rem] w-[0.6rem] rounded-full bg-[#BDFF00] shadow-[0_0_0_6px_rgba(189,255,0,0.18)]" />
-              Secure checkout
+              Review your checkout
             </div>
 
             <h1 className="m-0 text-[2.2rem] tracking-[-0.03em] max-[600px]:text-[1.9rem]">Checkout</h1>
 
             <p className="m-0 leading-[1.5] text-[#5C5C5C]">
-              We’ll match brands, sizing and delivery options. Your service fee is always <strong>£0.99</strong>.
+              Confirm your contact, delivery and payment choices below. The service fee shown on this order is <strong>£0.99</strong>.
             </p>
           </div>
 
           <div className="flex items-center gap-3 rounded-[1.2rem] border border-black/5 bg-white/75 px-[0.9rem] py-3 shadow-[0_10px_30px_rgba(0,0,0,0.06)] backdrop-blur-[10px] max-[640px]:w-full max-[640px]:justify-between max-[480px]:flex-col max-[480px]:items-start">
-            {["Tracked delivery", "Easy returns", "Encrypted payments"].map((t) => (
+            {["Delivery tracking", "Straightforward returns", "Protected payment flow"].map((t) => (
               <div key={t} className="inline-flex items-center gap-2 text-[0.9rem] text-black/70">
                 <span className="inline-flex h-[1.35rem] w-[1.35rem] items-center justify-center rounded-full border border-black/10 bg-[rgba(189,255,0,0.25)] font-bold">
                   ✓
@@ -244,7 +244,7 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
                 <div className="mb-[0.9rem] flex items-baseline justify-between gap-4 max-[480px]:flex-col max-[480px]:items-start">
                   <h2 className="m-0 text-[1.05rem] tracking-[-0.01em]">Contact</h2>
                   <span className="inline-flex h-7 items-center rounded-full border border-black/10 bg-[rgba(189,255,0,0.22)] px-3 text-[0.85rem] font-bold text-black/80">
-                    Account linked
+                    Account details ready
                   </span>
                 </div>
 
@@ -284,7 +284,7 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
 
                 <label className="mt-2 flex items-start gap-2 text-[0.95rem] text-black/70">
                   <input type="checkbox" className="mt-[0.2rem] accent-[#BDFF00]" />
-                  <span>Text/email me order updates and drops (optional)</span>
+                  <span>Send me delivery updates and occasional AnyHJS news (optional)</span>
                 </label>
               </section>
 
@@ -292,7 +292,7 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
               <section className={panelBase}>
                 <div className="mb-[0.9rem] flex items-baseline justify-between gap-4 max-[480px]:flex-col max-[480px]:items-start">
                   <h2 className="m-0 text-[1.05rem] tracking-[-0.01em]">Delivery address</h2>
-                  <span className="text-[0.95rem] text-[#5C5C5C]">Where should we send your fit?</span>
+                  <span className="text-[0.95rem] text-[#5C5C5C]">Where would you like the order delivered?</span>
                 </div>
 
                 <div className="grid grid-cols-2 gap-3 max-[480px]:grid-cols-1">
@@ -422,7 +422,7 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
               <section className={panelBase}>
                 <div className="mb-[0.9rem] flex items-baseline justify-between gap-4 max-[480px]:flex-col max-[480px]:items-start">
                   <h2 className="m-0 text-[1.05rem] tracking-[-0.01em]">Shipping</h2>
-                  <span className="text-[0.95rem] text-[#5C5C5C]">Choose what works for you.</span>
+                  <span className="text-[0.95rem] text-[#5C5C5C]">Select the delivery speed you prefer.</span>
                 </div>
 
                 <div className="flex flex-col gap-2" role="radiogroup" aria-label="Shipping options">
@@ -466,7 +466,7 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
               <section className={panelBase}>
                 <div className="mb-[0.9rem] flex items-baseline justify-between gap-4 max-[480px]:flex-col max-[480px]:items-start">
                   <h2 className="m-0 text-[1.05rem] tracking-[-0.01em]">Payment</h2>
-                  <span className="text-[0.95rem] text-[#5C5C5C]">All payments are encrypted.</span>
+                  <span className="text-[0.95rem] text-[#5C5C5C]">Choose the payment method you want to use.</span>
                 </div>
 
                 <div
@@ -574,7 +574,7 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
                         checked={billingSameAsShipping}
                         onChange={(e) => setBillingSameAsShipping(e.target.checked)}
                       />
-                      <span>Billing address same as delivery</span>
+                      <span>Use the delivery address for billing too</span>
                     </label>
                   </div>
                 )}
@@ -582,14 +582,14 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
                 {paymentMethod !== "card" && (
                   <div className="rounded-[1.25rem] border border-black/10 bg-[radial-gradient(300px_120px_at_20%_20%,rgba(189,255,0,0.22),rgba(189,255,0,0)_60%),linear-gradient(180deg,rgba(255,242,227,0.55),rgba(255,255,255,0.75))] p-4">
                     <p className="m-0 mb-3 leading-[1.5] text-black/70">
-                      You’ll be redirected to complete payment with{" "}
+                      Continue with{" "}
                       <strong>
                         {paymentMethod === "paypal" ? "PayPal" : paymentMethod === "gpay" ? "Google Pay" : "Shop Pay"}
-                      </strong>
-                      .
+                      </strong>{" "}
+                      to complete this payment option.
                     </p>
                     <div className="inline-flex h-[30px] items-center rounded-full border border-black/10 bg-black/[0.05] px-3 text-[0.9rem] font-bold text-black/75">
-                      Fast • Secure • One-tap
+                      Quick • Familiar • Simple
                     </div>
                   </div>
                 )}
@@ -609,8 +609,8 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
               <div className="mb-4 flex flex-col gap-3 border-b border-black/10 pb-4">
                 {cartItems.length === 0 && (
                   <div className="rounded-[1.25rem] border border-dashed border-black/20 bg-black/[0.02] p-4">
-                    <div className="mb-1 font-black">Your bag is empty</div>
-                    <div className="text-[#5C5C5C]">Add something tasty and come back.</div>
+                    <div className="mb-1 font-black">Your basket is empty</div>
+                    <div className="text-[#5C5C5C]">Add a product before returning to checkout.</div>
                   </div>
                 )}
 
@@ -721,7 +721,7 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
                 {!!appliedDiscountCode && !discountError && (
                   <div className="mt-2 flex items-center gap-2 text-[0.92rem] text-black/70">
                     <span className="h-[0.6rem] w-[0.6rem] rounded-full bg-[#BDFF00] shadow-[0_0_0_6px_rgba(189,255,0,0.18)]" />
-                    Applied: <strong>{appliedDiscountCode}</strong>
+                    Code active: <strong>{appliedDiscountCode}</strong>
                     <button
                       type="button"
                       onClick={() => setAppliedDiscountCode("")}
@@ -779,7 +779,7 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
                   <span className="text-[1.1rem] font-black">{formatGBP(total)}</span>
                 </div>
 
-                <div className="mt-1 text-[0.9rem] text-[#5C5C5C]">VAT included where applicable.</div>
+                <div className="mt-1 text-[0.9rem] text-[#5C5C5C]">Any applicable VAT is included in the displayed total.</div>
               </div>
 
               <button
@@ -788,18 +788,18 @@ export function FasterCheckout({ prefilledEmail = "you@example.com" }: FasterChe
                 form="checkoutForm"
                 disabled={!canCheckout || isPlacingOrder}
               >
-                {isPlacingOrder ? "Placing order…" : `Pay ${formatGBP(total)}`}
+                {isPlacingOrder ? "Confirming order…" : `Pay ${formatGBP(total)}`}
               </button>
 
               <div className="mt-3 text-[0.9rem] leading-[1.45] text-black/55">
-                By placing your order you agree to our{" "}
+                Continuing confirms that you have reviewed the{" "}
                 <button
                   type="button"
                   className="font-extrabold text-black/65 underline underline-offset-[3px] hover:text-black/85 focus:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)] focus-visible:rounded-xl"
                 >
                   Terms
                 </button>{" "}
-                and{" "}
+                and the{" "}
                 <button
                   type="button"
                   className="font-extrabold text-black/65 underline underline-offset-[3px] hover:text-black/85 focus:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)] focus-visible:rounded-xl"
