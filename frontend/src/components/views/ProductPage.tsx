@@ -106,7 +106,7 @@ const defaultProduct: Product = {
     stock: {
         status: "in",
         label: "In stock",
-        hint: "Only 7 left"
+        hint: "7 remaining"
     },
     colors: [
         { id: "col_orange", name: "Orange", value: "#FF7A00" },
@@ -122,35 +122,35 @@ const defaultProduct: Product = {
         { id: "size_xl", label: "XL" }
     ],
     description:
-        "Lightweight windcheater with a clean silhouette, soft-touch lining, and weather-ready finish. Designed for everyday layering—street-proof, not shouty.",
-    fitNote: "True to size. If you’re between sizes, go up for a roomier fit."
+        "A lightweight windcheater with a streamlined shape, smooth lining and practical outer finish. Easy to layer over everyday outfits without adding unnecessary bulk.",
+    fitNote: "Designed for a regular fit. Choose the larger size if you prefer extra room for layering."
 };
 
 const defaultRecommendations: Recommendation[] = [
     {
         id: "rec_1",
-        name: "Tech Cargo Trousers",
+        name: "Technical Cargo Trousers",
         price: 154,
         currency: "GBP",
         image: { id: "rec_img_1", src: productImg9, alt: "Recommended product 1" }
     },
     {
         id: "rec_2",
-        name: "Minimal Logo Tee",
+        name: "Minimal Logo T-Shirt",
         price: 72,
         currency: "GBP",
         image: { id: "rec_img_2", src: productImg10, alt: "Recommended product 2" }
     },
     {
         id: "rec_3",
-        name: "Clean Runner Sneaker",
+        name: "Everyday Runner Trainer",
         price: 138,
         currency: "GBP",
         image: { id: "rec_img_3", src: productImg11, alt: "Recommended product 3" }
     },
     {
         id: "rec_4",
-        name: "Soft Beanie",
+        name: "Soft Knit Beanie",
         price: 28,
         currency: "GBP",
         image: { id: "rec_img_4", src: productImg12, alt: "Recommended product 4" }
@@ -159,7 +159,7 @@ const defaultRecommendations: Recommendation[] = [
 
 const defaultBreadcrumbs: BreadcrumbItem[] = [
     { id: "bc_home", label: "Home", href: "/" },
-    { id: "bc_collection", label: "New Collection", href: "/collection/new" },
+    { id: "bc_collection", label: "Latest Collection", href: "/collection/new" },
     { id: "bc_current", label: "Yelirworld Windcheater" }
 ];
 
@@ -299,7 +299,7 @@ export default function ProductPage(props: ProductPageProps) {
                             <figure className="relative m-0 flex min-h-[520px] items-center justify-center overflow-hidden rounded-[1.75rem] border border-black/5 bg-white shadow-[0_18px_46px_rgba(0,0,0,0.14)] max-md:min-h-[420px] before:pointer-events-none before:absolute before:inset-[-2px] before:content-[''] before:opacity-[0.92] before:bg-[radial-gradient(520px_240px_at_12%_10%,rgba(189,255,0,0.22),rgba(189,255,0,0)_60%),radial-gradient(520px_260px_at_88%_14%,rgba(100,255,155,0.16),rgba(100,255,155,0)_66%),radial-gradient(780px_420px_at_40%_120%,rgba(255,242,227,0.85),rgba(255,242,227,0)_70%)] after:pointer-events-none after:absolute after:inset-0 after:content-[''] after:bg-[linear-gradient(180deg,rgba(255,255,255,0.12),rgba(0,0,0,0.02))]">
                                 <div className="absolute left-4 top-4 z-20 inline-flex items-center gap-2 rounded-full border border-black/5 bg-white/80 px-4 py-2 text-sm font-extrabold shadow-[0_12px_32px_rgba(0,0,0,0.09)] backdrop-blur-[10px]">
                                     <span className="h-[0.55rem] w-[0.55rem] rounded-full bg-[#BDFF00] shadow-[0_0_0_6px_rgba(189,255,0,0.18)]" />
-                                    New Drop
+                                    Latest arrival
                                 </div>
 
                                 {selectedImage ? (
@@ -312,10 +312,10 @@ export default function ProductPage(props: ProductPageProps) {
 
                                 <div className="absolute bottom-4 left-4 z-20 flex flex-wrap gap-2" aria-label="Shipping and returns highlights">
                                     <span className="inline-flex h-[30px] items-center rounded-full border border-black/10 bg-black/5 px-4 text-[0.9rem] font-extrabold text-black/70">
-                                        Free returns
+                                        30-day returns
                                     </span>
                                     <span className="inline-flex h-[30px] items-center rounded-full border border-black/10 bg-black/5 px-4 text-[0.9rem] font-extrabold text-black/70">
-                                        Ships in 24h
+                                        Quick dispatch
                                     </span>
                                 </div>
                             </figure>
@@ -389,7 +389,7 @@ export default function ProductPage(props: ProductPageProps) {
                         <section className="mt-4 mb-3 rounded-[1.35rem] border border-black/5 bg-white/70 p-4 shadow-[0_10px_28px_rgba(0,0,0,0.06)]" aria-label="Colour selection">
                             <div className="mb-3 flex items-baseline justify-between gap-4">
                                 <span className="font-black tracking-[-0.01em]">Colour</span>
-                                <span className="text-[0.92rem] text-black/55">Tap to preview</span>
+                                <span className="text-[0.92rem] text-black/55">Choose a shade</span>
                             </div>
 
                             <div className="flex flex-wrap items-center gap-3" role="radiogroup" aria-label="Choose a colour">
@@ -453,7 +453,7 @@ export default function ProductPage(props: ProductPageProps) {
                         </section>
 
                         <section className="mt-1 mb-5" aria-label="Description">
-                            <p className="m-0 mb-2 font-black tracking-[-0.01em]">Description</p>
+                            <p className="m-0 mb-2 font-black tracking-[-0.01em]">Product details</p>
                             <p className="m-0 leading-relaxed text-black/70">{product.description}</p>
                         </section>
 
@@ -485,7 +485,7 @@ export default function ProductPage(props: ProductPageProps) {
                                 <span className="inline-flex h-[1.35rem] w-[1.35rem] items-center justify-center rounded-full border border-black/10 bg-[rgba(189,255,0,0.25)] font-black">
                                     ✓
                                 </span>
-                                Secure checkout
+                                Checkout ready
                             </div>
                             <div className="inline-flex items-center gap-2 rounded-[1.15rem] border border-black/5 bg-white/70 px-4 py-3 font-extrabold text-black/70 shadow-[0_10px_26px_rgba(0,0,0,0.06)]">
                                 <span className="inline-flex h-[1.35rem] w-[1.35rem] items-center justify-center rounded-full border border-black/10 bg-[rgba(189,255,0,0.25)] font-black">
@@ -497,7 +497,7 @@ export default function ProductPage(props: ProductPageProps) {
                                 <span className="inline-flex h-[1.35rem] w-[1.35rem] items-center justify-center rounded-full border border-black/10 bg-[rgba(189,255,0,0.25)] font-black">
                                     ⚡
                                 </span>
-                                Fast dispatch
+                                Quick dispatch
                             </div>
                         </div>
                     </aside>
@@ -508,16 +508,16 @@ export default function ProductPage(props: ProductPageProps) {
                         <div className="min-w-0">
                             <p className="m-0 mb-1 inline-flex items-center gap-2 text-[0.92rem] font-extrabold text-black/55">
                                 <span className="h-[0.6rem] w-[0.6rem] rounded-full bg-[#BDFF00] shadow-[0_0_0_6px_rgba(189,255,0,0.18)]" />
-                                Pair it up
+                                Build around this piece
                             </p>
-                            <h2 className="m-0 text-[1.4rem] font-black tracking-[-0.03em]">Complete the fit</h2>
+                            <h2 className="m-0 text-[1.4rem] font-black tracking-[-0.03em]">More pieces for the look</h2>
                         </div>
 
                         <a
                             className="rounded-md px-1 font-black text-black/70 underline underline-offset-4 hover:text-black/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)]"
                             href="#"
                         >
-                            View all
+                            Explore all
                         </a>
                     </header>
 
