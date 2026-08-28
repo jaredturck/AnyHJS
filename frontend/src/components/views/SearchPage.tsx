@@ -37,7 +37,7 @@ export function ProductCard({ product, onView, onAddToCart }: ProductCardProps) 
                 {(product.isNew || product.isLowStock) && (
                     <div className="absolute left-3.5 top-3.5 inline-flex items-center gap-2 rounded-full border border-black/5 bg-white/80 px-3.5 py-2 text-black/70 shadow-[0_12px_32px_rgba(0,0,0,0.09)] backdrop-blur-[10px] font-black tracking-[-0.01em]">
                         <span className="h-[0.55rem] w-[0.55rem] rounded-full bg-[#BDFF00] shadow-[0_0_0_6px_rgba(189,255,0,0.18)]" />
-                        <span className="text-[0.9rem]">{product.isNew ? "New drop" : "Low stock"}</span>
+                        <span className="text-[0.9rem]">{product.isNew ? "Just added" : "Limited stock"}</span>
                     </div>
                 )}
             </div>
@@ -271,11 +271,11 @@ export default function SearchPage({ initialQuery = "hoodie" }: SearchPageProps)
                 <header className="mb-5">
                     <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-black/5 bg-white/80 px-4 py-2 text-black/70 shadow-[0_12px_32px_rgba(0,0,0,0.08)] backdrop-blur-[10px] font-black tracking-[-0.01em]">
                         <span className="h-[0.55rem] w-[0.55rem] rounded-full bg-[#BDFF00] shadow-[0_0_0_6px_rgba(189,255,0,0.18)]" />
-                        Search results
+                        Browse matching products
                     </div>
 
                     <h1 className="m-0 mb-4 text-[2rem] font-black leading-[1.1] tracking-[-0.03em] max-[600px]:text-[1.65rem]">
-                        Showing results for{" "}
+                        Results matching{" "}
                         <span className="inline-block rounded-[0.65rem] border border-black/10 bg-[rgba(189,255,0,0.20)] px-2 py-[0.05rem] font-black">
                             “{query}”
                         </span>
@@ -290,7 +290,7 @@ export default function SearchPage({ initialQuery = "hoodie" }: SearchPageProps)
                                 className="h-full w-full flex-1 border-0 bg-transparent font-extrabold tracking-[-0.01em] text-black/80 placeholder:font-extrabold placeholder:text-black/40 focus:outline-none"
                                 value={queryInput}
                                 onChange={(e) => setQueryInput(e.target.value)}
-                                placeholder="Search hoodies, tracksuits, tees…"
+                                placeholder="Try hoodies, jackets, tracksuits…"
                                 aria-label="Search query"
                             />
                         </div>
@@ -306,9 +306,9 @@ export default function SearchPage({ initialQuery = "hoodie" }: SearchPageProps)
                     <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
                         <div className="inline-flex items-center gap-2 rounded-full border border-black/5 bg-white/75 px-4 py-2 shadow-[0_10px_26px_rgba(0,0,0,0.06)]">
                             <span className="h-[0.6rem] w-[0.6rem] rounded-full bg-[#64ff9b] shadow-[0_0_0_6px_rgba(100,255,155,0.18)]" aria-hidden="true" />
-                            <span className="font-black tracking-[-0.01em] text-black/80">{results.length} products</span>
+                            <span className="font-black tracking-[-0.01em] text-black/80">{results.length} products found</span>
                             {activeFilterCount > 0 && (
-                                <span className="font-extrabold text-black/55">· {activeFilterCount} filter group(s) active</span>
+                                <span className="font-extrabold text-black/55">· {activeFilterCount} filter group(s) selected</span>
                             )}
                         </div>
 
@@ -347,7 +347,7 @@ export default function SearchPage({ initialQuery = "hoodie" }: SearchPageProps)
                             <div className="mb-3 rounded-[1.35rem] border border-black/5 bg-white/70 p-4 shadow-[0_10px_28px_rgba(0,0,0,0.06)]">
                                 <div className="mb-3 flex items-baseline justify-between gap-4">
                                     <h3 className="m-0 text-base font-black tracking-[-0.01em]">Gender</h3>
-                                    <span className="text-[0.92rem] font-extrabold text-black/55">Pick one</span>
+                                    <span className="text-[0.92rem] font-extrabold text-black/55">Choose one</span>
                                 </div>
 
                                 <div className="grid grid-cols-4 gap-2 max-[600px]:grid-cols-2" role="radiogroup" aria-label="Gender filter">
@@ -374,7 +374,7 @@ export default function SearchPage({ initialQuery = "hoodie" }: SearchPageProps)
                             <div className="mb-3 rounded-[1.35rem] border border-black/5 bg-white/70 p-4 shadow-[0_10px_28px_rgba(0,0,0,0.06)]">
                                 <div className="mb-3 flex items-baseline justify-between gap-4">
                                     <h3 className="m-0 text-base font-black tracking-[-0.01em]">Type</h3>
-                                    <span className="text-[0.92rem] font-extrabold text-black/55">Multi-select</span>
+                                    <span className="text-[0.92rem] font-extrabold text-black/55">Choose several</span>
                                 </div>
 
                                 <div className="grid grid-cols-1 gap-2">
@@ -398,7 +398,7 @@ export default function SearchPage({ initialQuery = "hoodie" }: SearchPageProps)
                             <div className="mb-4 rounded-[1.35rem] border border-black/5 bg-white/70 p-4 shadow-[0_10px_28px_rgba(0,0,0,0.06)]">
                                 <div className="mb-3 flex items-baseline justify-between gap-4">
                                     <h3 className="m-0 text-base font-black tracking-[-0.01em]">Color</h3>
-                                    <span className="text-[0.92rem] font-extrabold text-black/55">Multi-select</span>
+                                    <span className="text-[0.92rem] font-extrabold text-black/55">Choose several</span>
                                 </div>
 
                                 <div className="grid grid-cols-1 gap-2">
@@ -428,7 +428,7 @@ export default function SearchPage({ initialQuery = "hoodie" }: SearchPageProps)
                                 <span className="inline-flex h-[1.35rem] w-[1.35rem] items-center justify-center rounded-full border border-black/10 bg-[rgba(189,255,0,0.25)] font-black">
                                     ✓
                                 </span>
-                                Tip: combine Type + Color for “tight” results.
+                                Combine product type and colour to narrow the list quickly.
                             </div>
                         </div>
                     </aside>
@@ -436,16 +436,16 @@ export default function SearchPage({ initialQuery = "hoodie" }: SearchPageProps)
                     <div className="min-w-0" aria-label="Search results list">
                         {results.length === 0 ? (
                             <div className="rounded-[1.75rem] border border-black/5 bg-white/70 p-6 text-left shadow-[0_14px_34px_rgba(0,0,0,0.10)]">
-                                <h2 className="m-0 mb-2 text-[1.35rem] font-black tracking-[-0.02em]">No matches</h2>
+                                <h2 className="m-0 mb-2 text-[1.35rem] font-black tracking-[-0.02em]">Nothing matched</h2>
                                 <p className="m-0 mb-4 font-extrabold leading-relaxed text-black/70">
-                                    Try a different search term, or clear a couple of filters.
+                                    Change the search wording or remove one of the active filters to broaden the results.
                                 </p>
                                 <button
                                     type="button"
                                     className="h-12 rounded-[1.1rem] border border-black/10 bg-[linear-gradient(135deg,rgba(189,255,0,0.62),rgba(100,255,155,0.24))] px-4 font-black tracking-[-0.01em] shadow-[0_14px_34px_rgba(0,0,0,0.10)] transition-[transform,box-shadow] duration-150 hover:-translate-y-[1px] hover:shadow-[0_18px_44px_rgba(0,0,0,0.13)] active:translate-y-0 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[rgba(189,255,0,0.55)]"
                                     onClick={clearFilters}
                                 >
-                                    Clear filters
+                                    Reset filters
                                 </button>
                             </div>
                         ) : (
