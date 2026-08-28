@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route, Outlet } from 'react-router-dom';
-import { fetchJson } from './components/api_fetch';
 import './App.scss';
 
 import { Navbar } from './components/navbar';
@@ -28,21 +27,12 @@ import { MensClothing, WomensClothing } from './components/views/clothing';
 import { CreateWardrobe } from './components/views/create_waredrobe';
 import { MyAccount } from './components/views/my_account';
 
-import { Login, Register, ForgotPassword, ChangePassword, ResetEmail } from './components/views/auth';
+import { AUTH_STORAGE_KEY, Login, Register, ForgotPassword, ChangePassword, ResetEmail, type AuthStatus } from './components/views/auth';
 import { ContactUs } from './components/views/contact_us';
 import ProductPage from './components/views/ProductPage';
 import SearchPage from './components/views/SearchPage';
 
-type AuthStatusResponse = {
-  isAuthenticated: boolean;
-  user: {
-    id: number;
-    username: string;
-    email: string;
-  } | null;
-};
-
-function Layout(props: { auth: AuthStatusResponse | null }) {
+function Layout(props: { auth: AuthStatus }) {
   return (
     <div>
       <Navbar auth={props.auth} />
@@ -55,21 +45,10 @@ function Layout(props: { auth: AuthStatusResponse | null }) {
 }
 
 function App() {
-  const [auth, setAuth] = useState<AuthStatusResponse | null>(null);
+  const [auth, setAuth] = useState<AuthStatus>({ isAuthenticated: false });
 
   useEffect(() => {
-    fetchJson("/api/csrf/").catch((error) => {
-      console.error("Failed to set CSRF cookie", error);
-    });
-
-    fetchJson<AuthStatusResponse>("/api/auth/status/")
-      .then((data) => {
-        setAuth(data);
-      })
-      .catch((error) => {
-        console.error("Failed to fetch auth status", error);
-        setAuth({ isAuthenticated: false, user: null });
-      });
+    setAuth({ isAuthenticated: localStorage.getItem(AUTH_STORAGE_KEY) === 'true' });
   }, []);
 
   return (
@@ -96,14 +75,14 @@ function App() {
         <Route path="womens-clothing" element={<WomensClothing />} />
         <Route path="create" element={<CreateWardrobe />} />
         <Route path="login" element={<Login setAuth={setAuth} auth={auth} />} />
-        <Route path="register" element={<Register setAuth={setAuth} auth={auth} />} />
+        <Route path="register" element={<Register setAuth={setAuth} />} />
         <Route path="forgot-password" element={<ForgotPassword />} />
         <Route path="change-password" element={<ChangePassword />} />
         <Route path="reset-email" element={<ResetEmail />} />
         <Route path="contact" element={<ContactUs />} />
-        <Route path="account" element={ <MyAccount setAuth={setAuth} auth={auth} />} />
+        <Route path="account" element={<MyAccount setAuth={setAuth} auth={auth} />} />
         <Route path="product" element={<ProductPage />} />
-        <Route path="search" element={ <SearchPage /> } />
+        <Route path="search" element={<SearchPage />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

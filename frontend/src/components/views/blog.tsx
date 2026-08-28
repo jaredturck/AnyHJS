@@ -1,28 +1,9 @@
-import { useEffect, useState } from "react";
 import banner1 from "../../imgs/banners/blog.avif";
 import { ClothingBanner } from "../clothing_banner";
 import { GenericPageSection } from "./generic_text";
-import { fetchJson } from "../api_fetch";
+import { blogPosts } from "../../data/blog_posts";
 
 export function Blog() {
-  const [articles, setArticles] = useState<any[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    const url = "/api/blog-articles/?page=1&no_articles=5";
-
-    setIsLoading(true);
-    setError(null);
-
-    fetchJson(url)
-      .then((data: any) => setArticles(data.data || []))
-      .catch((err: any) =>
-        setError(err instanceof Error ? err.message : "Failed to load blog articles."),
-      )
-      .finally(() => setIsLoading(false));
-  }, []);
-
   return (
     <div>
       <ClothingBanner
@@ -37,25 +18,12 @@ export function Blog() {
         subtitle="Catch up on trends, collabs and product updates from across the platform."
       >
         <div className="mt-6">
-          {isLoading && (
-            <p className="text-[0.95rem] text-[rgba(26,26,26,0.72)]">
-              Loading articles…
-            </p>
-          )}
-
-          {error && (
-            <p className="text-[0.95rem] text-red-700">
-              Error: {error}
-            </p>
-          )}
-
           <div className="flex flex-col gap-5">
-            {articles.map((article, index) => (
+            {blogPosts.map((article, index) => (
               <article
                 key={index}
                 className="relative overflow-hidden rounded-[1.1rem] border border-[#262626] bg-[radial-gradient(circle_at_top_left,#181818_0,#050505_70%)] px-6 pt-[1.4rem] pb-6 text-white shadow-[0_18px_40px_rgba(0,0,0,0.8)]"
               >
-                {/* subtle glow */}
                 <div
                   aria-hidden="true"
                   className="pointer-events-none absolute -top-[20%] -left-[20%] h-[22rem] w-[22rem] rounded-full bg-[radial-gradient(circle_at_0%_0%,rgba(189,255,0,0.12),transparent_55%)] opacity-70"

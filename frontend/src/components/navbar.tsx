@@ -5,17 +5,14 @@ import person_icon from '../imgs/navbar_icons/person.png';
 import search_icon from '../imgs/navbar_icons/search.png';
 
 import { NavLink } from 'react-router-dom';
+import type { AuthStatus } from './views/auth';
 
 type NavbarProps = {
-  auth: {
-    isAuthenticated: boolean;
-    user: { id: number; username: string; email: string } | null;
-  } | null;
+  auth: AuthStatus;
 };
 
 export function Navbar({ auth }: NavbarProps) {
-  const isAuthenticated = auth?.isAuthenticated === true;
-  const profileLink = isAuthenticated ? '/account' : '/login';
+  const profileLink = auth.isAuthenticated ? '/account' : '/login';
 
   const getLinkClass = ({ isActive }: { isActive: boolean }) =>
     `relative text-[0.875rem] text-white no-underline cursor-pointer transition-colors duration-200 after:content-[''] after:absolute after:left-0 after:bottom-[-0.25rem] after:h-[2px] after:w-0 after:bg-[var(--accent-color)] after:transition-[width] after:duration-200 hover:text-[var(--accent-color)] hover:after:w-full ${isActive ? 'text-[var(--accent-color)] after:w-full' : ''}`;
