@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Routes, Route, Outlet } from 'react-router-dom';
 import './App.scss';
 
@@ -45,11 +45,9 @@ function Layout(props: { auth: AuthStatus }) {
 }
 
 function App() {
-  const [auth, setAuth] = useState<AuthStatus>({ isAuthenticated: false });
-
-  useEffect(() => {
-    setAuth({ isAuthenticated: localStorage.getItem(AUTH_STORAGE_KEY) === 'true' });
-  }, []);
+  const [auth, setAuth] = useState<AuthStatus>(() => ({
+    isAuthenticated: typeof window !== 'undefined' && localStorage.getItem(AUTH_STORAGE_KEY) === 'true',
+  }));
 
   return (
     <Routes>
