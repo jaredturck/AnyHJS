@@ -43,12 +43,7 @@ export default defineConfig({
   ],
   server: {
     port: 3000,
-    strictPort: true,
-    proxy: {
-      "/api": "http://localhost:8000",
-      "/media": "http://localhost:8000",
-      "/static": "http://localhost:8000"
-    }
+    strictPort: true
   },
   build: {
     outDir: "build"
