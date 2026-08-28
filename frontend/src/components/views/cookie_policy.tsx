@@ -7,19 +7,19 @@ export function CookiePolicy() {
         <div>
             <ClothingBanner
                 title="Cookie Policy"
-                subtitle="How we use cookies and similar technologies"
+                subtitle="How AnyHJS uses cookies and similar technologies"
                 img_src={banner1}
             />
 
             <GenericPageSection
                 label="Legal"
                 title="Cookie Policy"
-                subtitle="This Cookie Policy explains how NESZN uses cookies and similar technologies on our website and how you can manage your choices."
+                subtitle="This Cookie Policy explains how AnyHJS uses cookies and similar technologies on our website and how you can manage your choices."
             >
                 <h1>Cookie Policy</h1>
 
                 <p>
-                    This Cookie Policy explains how NESZN ("NESZN", "we", "us" or "our") uses cookies and similar
+                    This Cookie Policy explains how AnyHJS ("AnyHJS", "we", "us" or "our") uses cookies and similar
                     technologies on our website and online store (the "Site"). It should be read together with
                     our Privacy Policy and Terms and Conditions.
                 </p>
@@ -267,23 +267,11 @@ export function CookiePolicy() {
 
                 <p>
                     If you have any questions or concerns about this Cookie Policy or our use of cookies and
-                    similar technologies, please contact us using the details below:
+                    similar technologies, please use the contact details or form available on our Contact page.
                 </p>
 
                 <p>
-                    NESZN
-                    <br />
-                    [Registered office address]
-                    <br />
-                    [Postal code, Country]
-                    <br />
-                    Email: <a href="mailto:[privacy@email.address]">[privacy@email.address]</a>
-                    <br />
-                    Telephone: [contact number]
-                </p>
-
-                <p>
-                    <em>Last updated: [insert date]</em>
+                    <em>Last updated: 28 August 2026</em>
                 </p>
             </GenericPageSection>
         </div>
