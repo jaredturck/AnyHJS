@@ -14,260 +14,214 @@ export function CookiePolicy() {
             <GenericPageSection
                 label="Legal"
                 title="Cookie Policy"
-                subtitle="This Cookie Policy explains how AnyHJS uses cookies and similar technologies on our website and how you can manage your choices."
+                subtitle="This policy explains the browser technologies that may be used by AnyHJS and how you can manage them."
             >
                 <h1>Cookie Policy</h1>
 
                 <p>
-                    This Cookie Policy explains how AnyHJS ("AnyHJS", "we", "us" or "our") uses cookies and similar
-                    technologies on our website and online store (the "Site"). It should be read together with
-                    our Privacy Policy and Terms and Conditions.
+                    This Cookie Policy describes how AnyHJS ("AnyHJS", "we", "us" or "our") may use cookies,
+                    local storage and related technologies when you visit the AnyHJS website (the "Site"). It
+                    should be read alongside our Privacy Policy, which explains how personal data may be handled.
                 </p>
 
                 <p>
-                    This Policy is intended to comply with applicable UK law, including the UK General Data
-                    Protection Regulation ("UK GDPR"), the Data Protection Act 2018 and the Privacy and
-                    Electronic Communications (EC Directive) Regulations 2003 ("PECR"), as amended. PECR
-                    sets specific rules for storing information or gaining access to information stored on
-                    a user’s device (for example, via cookies), and these rules apply in addition to UK GDPR
-                    where the data involved is personal data.
+                    Rules concerning cookies and similar technologies in the United Kingdom include the
+                    Privacy and Electronic Communications Regulations 2003 ("PECR") as well as the UK GDPR
+                    and Data Protection Act 2018 where personal data is involved.
                 </p>
 
                 <h2>1. What Are Cookies and Similar Technologies?</h2>
 
                 <p>
-                    Cookies are small text files that are downloaded to your device (such as a computer,
-                    tablet or smartphone) when you visit a website. They are widely used to make websites
-                    work, or work more efficiently, as well as to provide information to the website owner.
-                    Cookies can be "session" cookies (which expire when you close your browser) or
-                    "persistent" cookies (which stay on your device for a set period or until you delete
-                    them).
+                    A cookie is a small piece of information that a website can ask your browser to store on
+                    your device. Some cookies last only for the current browsing session, while others remain
+                    until they expire or are removed through your browser settings.
                 </p>
 
                 <p>
-                    We also use technologies similar to cookies, such as pixels, tags, local storage,
-                    SDKs and scripts, which can perform similar functions (collectively, "cookies" for the
-                    purposes of this Policy). These technologies allow us and certain third parties to
-                    store or access information on your device.
+                    Websites can also use other browser technologies for similar purposes, including local
+                    storage, pixels, tags and scripts. In this policy, references to "cookies" may include
+                    those related technologies where the context requires it.
                 </p>
 
                 <h2>2. Legal Framework and Consent</h2>
 
                 <p>
-                    Under PECR, we must:
+                    Under PECR, information generally must not be stored on or read from your device through
+                    non-essential technologies unless you have been given clear information and, where
+                    required, have provided consent.
                 </p>
 
                 <ul>
-                    <li>Tell you clearly and comprehensively about the cookies we use and the purposes for which we use them; and</li>
-                    <li>Obtain your consent before storing non-essential cookies or accessing information stored on your device.</li>
+                    <li>Technologies that are strictly necessary for a service you have requested may be used without optional consent.</li>
+                    <li>Analytics, advertising and other non-essential technologies may require prior consent depending on how they operate.</li>
                 </ul>
 
                 <p>
-                    Only cookies that are "strictly necessary" for the provision of an online service you
-                    have explicitly requested (for example, remembering items in your basket or maintaining
-                    a secure login session) are exempt from the consent requirement. All other cookies,
-                    including most analytics, personalisation and advertising cookies, require your
-                    prior, opt-in consent that meets the standards of the UK GDPR (freely given,
-                    specific, informed and unambiguous, given by a clear affirmative action).
+                    Where the information collected through these technologies is personal data, a lawful
+                    basis under UK data-protection law is also required. The relevant basis depends on the
+                    purpose and circumstances of the processing.
                 </p>
 
-                <p>
-                    Where cookies involve the processing of personal data, we also rely on an appropriate
-                    lawful basis under the UK GDPR (for example, consent or our legitimate interests, as
-                    described in our Privacy Policy).
-                </p>
-
-                <h2>3. How We Obtain Your Consent</h2>
+                <h2>3. How Cookie Choices Are Managed</h2>
 
                 <p>
-                    When you first visit our Site, you will see a cookie banner or preference tool which:
+                    Where the Site uses optional cookies that require consent, appropriate controls may be
+                    provided so that you can make or change your choice. Those controls may allow you to:
                 </p>
 
                 <ul>
-                    <li>Provides clear information about the categories of cookies we use;</li>
-                    <li>Allows you to accept or reject non-essential cookies, or to manage your preferences by category; and</li>
-                    <li>Operates on a basis of genuine choice, meaning non-essential cookies are not set unless and until you have consented.</li>
+                    <li>accept or reject optional categories;</li>
+                    <li>review the purpose of a category before making a choice; and</li>
+                    <li>change a previous preference where the relevant controls are available.</li>
                 </ul>
 
                 <p>
-                    You can withdraw or change your consent at any time by adjusting your cookie settings
-                    via the link or icon provided on the Site (for example, “Cookie Settings” or similar),
-                    or by changing your browser settings as described below. Withdrawal of consent does not
-                    affect the lawfulness of processing based on consent before it was withdrawn.
+                    Browser settings can also be used to remove or block stored information. Changing browser
+                    settings does not necessarily alter choices already recorded by an external provider, so
+                    you may need to use both the Site controls and provider-specific controls where relevant.
                 </p>
 
-                <h2>4. Types of Cookies We Use</h2>
+                <h2>4. Types of Cookies We May Use</h2>
 
                 <p>
-                    We group the cookies used on our Site into the following categories. The specific cookies,
-                    their providers and lifespans may change over time; we will update this Policy or our
-                    cookie preference tool to reflect material changes.
+                    The categories below describe common purposes for cookies and similar technologies on the
+                    Site. The particular technologies in use can change as features and service providers are
+                    added, removed or updated.
                 </p>
 
-                <h3>4.1 Strictly Necessary Cookies</h3>
+                <h3>4.1 Strictly Necessary Technologies</h3>
 
                 <p>
-                    These cookies are essential for the operation of the Site and for enabling you to move
-                    around it and use its features, such as accessing secure areas, managing your shopping
-                    basket and completing checkout. Without these cookies, services you have requested
-                    cannot be provided. Because they are strictly necessary, they do not require your
-                    consent, but they are still covered by this Policy.
+                    These support functions that are needed for the Site or for a feature you have specifically
+                    requested. Examples can include maintaining essential interface state, security controls or
+                    remembering a choice that is necessary to provide the requested function.
                 </p>
 
-                <h3>4.2 Performance and Analytics Cookies</h3>
+                <h3>4.2 Analytics and Performance Technologies</h3>
 
                 <p>
-                    These cookies collect information about how visitors use the Site, such as which pages
-                    are visited most often, how users move around the Site and whether they receive error
-                    messages. We use this information in aggregated form to help us understand and improve
-                    the performance of the Site and to develop new features and services.
+                    Analytics technologies can help us understand how the Site is reached and used, which
+                    pages receive attention, how visitors move between sections and whether technical problems
+                    occur. This information can be used to assess performance and improve the experience.
                 </p>
 
                 <p>
-                    Where these cookies are not strictly necessary, they will only be set with your consent.
-                    Examples include cookies placed by web analytics services (for example, to generate
-                    statistics about traffic and usage patterns).
+                    Where consent is required for an analytics technology, it should only be used after the
+                    relevant consent has been obtained.
                 </p>
 
-                <h3>4.3 Functionality Cookies</h3>
+                <h3>4.3 Functionality Technologies</h3>
 
                 <p>
-                    Functionality cookies allow the Site to remember choices you make (such as your
-                    language, region or saved items) and provide enhanced, more personalised features.
-                    These cookies may also be used to provide services you have requested, such as live
-                    chat support or remembering your login details (where you choose this option).
+                    Functionality storage can remember optional choices that make the Site more convenient,
+                    such as a display preference, saved selection or other browser-based state. Whether consent
+                    is required depends on the purpose and whether the storage is necessary for a feature you
+                    have requested.
                 </p>
 
-                <p>
-                    These cookies are generally non-essential and will only be used with your consent, unless
-                    they are strictly necessary to deliver a feature you have requested.
-                </p>
-
-                <h3>4.4 Advertising and Targeting Cookies</h3>
+                <h3>4.4 Advertising and Targeting Technologies</h3>
 
                 <p>
-                    These cookies are used to deliver adverts that are more relevant to you and your
-                    interests, both on our Site and on third-party sites and apps. They may also be used to
-                    limit the number of times you see an advert and to help measure the effectiveness of
-                    advertising campaigns.
+                    Advertising technologies may be used to understand campaign performance, limit repeated
+                    advertising or help tailor advertising to interests. These technologies can sometimes
+                    create or contribute to a profile based on activity across websites or services.
                 </p>
 
                 <p>
-                    These cookies are often set by third-party advertising networks or social media
-                    platforms. They may build a profile of your interests based on your browsing activity
-                    and may track you across different websites and devices. We will only use advertising or
-                    targeting cookies with your prior consent.
+                    Where advertising or targeting technologies require consent, they should not be activated
+                    until that consent has been given.
                 </p>
 
-                <h3>4.5 Social Media Cookies</h3>
+                <h3>4.5 Social Media Technologies</h3>
 
                 <p>
-                    Our Site may include social media features or plug-ins (such as "like" or "share"
-                    buttons). These features may set cookies that allow the social media platform to track
-                    your activity on our Site or link your visit to your account on that platform. The use
-                    of such cookies is governed by the privacy and cookie policies of the relevant social
-                    media providers, and we encourage you to review those policies separately.
+                    If social-media features, embeds or sharing tools are added to the Site, the relevant
+                    platform may place or read information through its own technology. The platform's own
+                    privacy and cookie information will govern how it uses data collected through those tools.
                 </p>
 
-                <h2>5. Third-Party Cookies</h2>
+                <h2>5. Third-Party Technologies</h2>
 
                 <p>
-                    Some cookies on our Site are set by third parties acting on our behalf (for example,
-                    analytics providers, payment processors or service providers who help us operate the
-                    Site), and some are set by independent third parties who may combine information
-                    collected through cookies with other data they hold about you.
+                    Some technologies used with the Site may be supplied by third-party services, such as
+                    analytics, hosting, media, payment or social-platform providers. Those providers may receive
+                    information directly from your browser when their service is loaded.
                 </p>
 
                 <p>
-                    We contractually require third parties acting as our processors to process personal data
-                    obtained via cookies only on our documented instructions, to keep it secure and to
-                    comply with applicable data protection laws. Where third parties act as independent
-                    controllers (for example, certain advertising networks or social media platforms),
-                    their collection and use of your data is subject to their own privacy and cookie
-                    policies, which we do not control.
+                    A provider acting only on our instructions may process information as a processor, while
+                    another provider may act as an independent controller for its own purposes. Where a third
+                    party controls its own processing, you should consult that organisation's privacy and cookie
+                    information for further detail.
                 </p>
 
-                <h2>6. Retention Periods</h2>
+                <h2>6. How Long Cookies Remain</h2>
 
                 <p>
-                    The length of time a cookie remains on your device varies. Some cookies are session
-                    cookies that last only for the duration of your browser session; others are persistent
-                    cookies that are stored for a defined period and activated each time you visit the Site.
+                    Storage periods vary. Session technologies can disappear when the browser session ends,
+                    while persistent cookies or local-storage values can remain for a defined period or until
+                    they are manually removed.
                 </p>
 
                 <p>
-                    We aim to ensure that cookies and similar technologies are not kept for longer than is
-                    necessary for the purposes for which they are used. Details of typical lifespans for
-                    each cookie category are available in our cookie preference tool or on request.
+                    We aim to avoid retaining browser identifiers for longer than reasonably necessary for
+                    their stated purpose. Third-party technologies may use retention periods determined by the
+                    relevant provider.
                 </p>
 
-                <h2>7. International Transfers</h2>
+                <h2>7. International Data Transfers</h2>
 
                 <p>
-                    Some of our third-party providers (for example, analytics or advertising partners) may
-                    be located outside the United Kingdom or may store data on servers located outside the
-                    UK. Where the cookies they set result in the transfer of personal data to countries that
-                    do not provide the same level of data protection as the UK, we will ensure that
-                    appropriate safeguards are in place, such as approved international data transfer
-                    agreements or standard contractual clauses, in accordance with UK GDPR requirements.
+                    A third-party technology provider may process information outside the United Kingdom.
+                    Where that activity involves a restricted transfer of personal data, appropriate safeguards
+                    should be used in accordance with applicable UK data-protection law.
                 </p>
 
-                <h2>8. Managing Cookies</h2>
+                <h2>8. Managing Cookies and Browser Storage</h2>
 
                 <p>
-                    You can manage your cookie preferences in several ways:
+                    You can control cookies and similar storage in several ways, depending on the technology:
                 </p>
 
                 <ul>
-                    <li>
-                        By using our on-site cookie preference tool or banner to accept, reject or configure
-                        non-essential cookies by category; and
-                    </li>
-                    <li>
-                        By adjusting your browser settings to block or delete cookies. Most browsers allow you
-                        to refuse some or all cookies and to delete cookies that have already been set. Please
-                        note that disabling or blocking certain cookies may affect the functionality and
-                        performance of the Site and may prevent you from using some features.
-                    </li>
+                    <li>use any privacy or preference controls made available on the Site;</li>
+                    <li>change your browser settings to block, remove or limit cookies;</li>
+                    <li>clear local storage or other site data through your browser; and</li>
+                    <li>use provider-specific settings or opt-out controls where a third party offers them.</li>
                 </ul>
 
                 <p>
-                    Instructions for managing cookies can usually be found in the "Help" section of your
-                    browser or on the browser provider’s website. You may also visit industry-wide opt-out
-                    platforms (where available) for interest-based advertising, although these tools are
-                    provided by third parties and we do not control or endorse them.
+                    Blocking all browser storage can affect features that depend on it. Your browser's help or
+                    privacy settings normally explain how to review and remove stored site information.
                 </p>
 
                 <h2>9. Relationship with Our Privacy Policy</h2>
 
                 <p>
-                    Where cookies or similar technologies collect or involve personal data, that data will
-                    also be processed in accordance with our Privacy Policy, which provides more detailed
-                    information about how we collect, use, disclose and protect personal data, as well as
-                    your rights under UK GDPR and the Data Protection Act 2018.
+                    If a cookie or similar technology collects information that identifies you or can be linked
+                    to you, our Privacy Policy also applies to the handling of that personal data. That policy
+                    contains more information about lawful bases, sharing, retention and individual rights.
                 </p>
 
-                <h2>10. Updates to This Cookie Policy</h2>
+                <h2>10. Changes to This Cookie Policy</h2>
 
                 <p>
-                    We may update this Cookie Policy from time to time, for example to reflect changes in
-                    the cookies we use, in our practices or in applicable law (including updates to PECR,
-                    UK GDPR or related guidance from the UK Information Commissioner’s Office). When we make
-                    material changes, we will take appropriate steps to notify you, such as by posting a
-                    prominent notice on the Site or updating our cookie banner.
+                    We may update this Cookie Policy when the technologies used by the Site change, when new
+                    providers are introduced, or when legal or regulatory requirements develop. The current
+                    version will be published on this page.
                 </p>
 
                 <p>
-                    The "Last updated" date below indicates when this Cookie Policy was most recently
-                    revised. We encourage you to review this Policy periodically to stay informed about how
-                    we use cookies and similar technologies.
+                    Where a change affects a consent choice or materially alters how an optional technology is
+                    used, additional notice or a renewed choice may be provided where required.
                 </p>
 
                 <h2>11. Contact Us</h2>
 
                 <p>
-                    If you have any questions or concerns about this Cookie Policy or our use of cookies and
-                    similar technologies, please use the contact details or form available on our Contact page.
+                    If you have a question about cookies, browser storage or this policy, please use the
+                    contact information or form available on our Contact page.
                 </p>
 
                 <p>
