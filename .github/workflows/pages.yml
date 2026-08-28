@@ -49,20 +49,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git fetch origin static-deployment:refs/remotes/origin/static-deployment
-          git worktree add --detach deployment origin/static-deployment
-
+          git worktree add --detach deployment "$GITHUB_SHA"
           git -C deployment rm -rf .
           cp -a frontend/build/. deployment/
           git -C deployment add -A
-
-          if git -C deployment diff --cached --quiet; then
-            echo "Static deployment branch is already up to date."
-            exit 0
-          fi
-
           git -C deployment commit -m "Deploy ${GITHUB_SHA}"
-          git -C deployment push origin HEAD:static-deployment
+          git -C deployment push --force origin HEAD:static-deployment
 
       - uses: actions/upload-pages-artifact@v4
         with:
