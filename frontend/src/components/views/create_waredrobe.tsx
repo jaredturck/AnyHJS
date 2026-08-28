@@ -600,7 +600,7 @@ function ProductPanel(props: TProductPanelProps) {
       >
         {filteredAndSorted.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-black/10 bg-white/70 px-4 py-4 font-black text-black/55">
-            No results in your filters.
+            Nothing matches the current filters.
           </div>
         ) : (
           <div className="grid grid-cols-1 gap-3">
@@ -635,7 +635,7 @@ function ProductPanel(props: TProductPanelProps) {
                     />
                     {!p.isAvailable ? (
                       <div className="absolute left-2 top-2 rounded-full bg-black/75 px-3 py-1 text-xs font-black tracking-[-0.01em] text-white">
-                        Out of stock
+                        Unavailable
                       </div>
                     ) : null}
                   </div>
@@ -653,7 +653,7 @@ function ProductPanel(props: TProductPanelProps) {
                     </div>
 
                     <div className="mt-2 text-[0.9rem] font-black tracking-[-0.01em]">
-                      Add to outfit →
+                      Use in outfit →
                     </div>
                   </div>
                 </button>
@@ -674,7 +674,7 @@ function ProductPanel(props: TProductPanelProps) {
               focusRing
             )}
           >
-            Load more
+            Show more
           </button>
         ) : null}
       </div>
@@ -1016,8 +1016,8 @@ export function CreateWardrobe() {
       )}
     >
       <ClothingBanner
-        title="CREATE YOUR FIT"
-        subtitle="CHOOSE A TOP AND BOTTOM"
+        title="BUILD YOUR OUTFIT"
+        subtitle="PAIR A TOP WITH A BOTTOM"
         img_src={collection === "men" ? men_banner : women_banner}
       />
       <CircleLogo />
@@ -1027,10 +1027,10 @@ export function CreateWardrobe() {
         <header className="mb-6 flex items-start justify-between gap-5 max-[640px]:flex-col max-[640px]:items-start">
           <div className="max-w-[42rem]">
             <h1 className="m-0 text-[clamp(2rem,3.1vw,3.15rem)] font-black tracking-[-0.04em] leading-[1.05]">
-              Create your fit
+              Build a complete look
             </h1>
             <p className="mt-3 max-w-[34rem] text-[1.05rem] leading-[1.55] text-black/55">
-              Choose a top and bottom. We’ll match brands and pricing.
+              Pick a top and bottom, then compare combinations across brands and prices.
             </p>
 
             {/* Collection toggle */}
@@ -1208,7 +1208,7 @@ export function CreateWardrobe() {
                         alt={`${selectedTop.name} preview`}
                       />
                     ) : (
-                      <div className="font-black tracking-[-0.01em] text-black/55">Select a top</div>
+                      <div className="font-black tracking-[-0.01em] text-black/55">Choose a top</div>
                     )}
                   </div>
                 ) : null}
@@ -1222,7 +1222,7 @@ export function CreateWardrobe() {
                         alt={`${selectedBottom.name} preview`}
                       />
                     ) : (
-                      <div className="font-black tracking-[-0.01em] text-black/55">Select a bottom</div>
+                      <div className="font-black tracking-[-0.01em] text-black/55">Choose a bottom</div>
                     )}
                   </div>
                 ) : null}
@@ -1237,7 +1237,7 @@ export function CreateWardrobe() {
                 )}
               >
                 <label className="text-xs font-black text-black/55" htmlFor="outfit-size">
-                  Size
+                  Fit
                 </label>
                 <select
                   id="outfit-size"
@@ -1324,7 +1324,7 @@ export function CreateWardrobe() {
             <span className="mr-2 text-lg opacity-90" aria-hidden="true">
               ♡
             </span>
-            Save to favourites
+            Keep this look
           </button>
 
           <button
@@ -1337,7 +1337,7 @@ export function CreateWardrobe() {
               focusRing
             )}
           >
-            Find the best match
+            Compare this combination
           </button>
 
           <button
@@ -1351,7 +1351,7 @@ export function CreateWardrobe() {
               focusRing
             )}
           >
-            Start over
+            Reset outfit
           </button>
         </footer>
       </div>
