@@ -8,36 +8,36 @@ export function VRChangingRoom() {
         <div>
             <ClothingBanner
                 title="VR Changing Room"
-                subtitle="Virtual try-on for real outfits (Coming soon)"
+                subtitle="See how outfits could look on you before you choose them (Coming soon)"
                 img_src={banner1}
             />
 
             <GenericPageSection
                 label="Labs"
                 title="VR Changing Room (Coming Soon)"
-                subtitle="A virtual try-on experience that lets you see outfits on your body in real time, straight from your camera."
+                subtitle="A planned virtual try-on experience that uses your camera to preview clothing on your body in real time."
             >
                 <h1>VR Changing Room (Coming Soon)</h1>
 
                 <p>
-                    Welcome to the next generation of online shopping. <strong>VR Changing Room</strong>
-                    is our upcoming virtual try-on experience that lets you see how clothes will look on
-                    you before you buy – all from your phone, in real time. Instead of guessing from
-                    product photos or size charts, you’ll be able to stand in front of your camera and
-                    watch outfits appear directly on your body, as if you were in a real changing room.
+                    <strong>VR Changing Room</strong> is our planned virtual try-on feature for making online
+                    shopping feel a little closer to trying something on in person. Using your phone camera,
+                    the experience is intended to show selected clothing on your body in real time before
+                    you decide what to buy, giving you another way to judge a look beyond product photography
+                    and standard size information.
                 </p>
 
                 <p>
-                    As a multi-brand platform, we stock clothing from hundreds of labels – from Nike and
-                    Adidas to emerging designers and niche streetwear brands. VR Changing Room bridges the
-                    gap between our huge online selection and the in-store “try it on” experience, giving
-                    you a digital mirror that helps you make confident choices with zero hassle.
+                    AnyHJS brings products from many different labels into one place, from established names
+                    to smaller and emerging brands. VR Changing Room is designed to connect that broad online
+                    selection with a more visual way of exploring an outfit, using your screen like a digital
+                    mirror while you compare pieces and styles.
                 </p>
 
                 <figure>
                     <img
                         src={vrChangingRoomImage}
-                        alt="Preview of VR Changing Room experience"
+                        alt="Preview of the planned VR Changing Room experience"
                         style={{ width: "100%", borderRadius: "12px" }}
                     />
                 </figure>
@@ -45,81 +45,78 @@ export function VRChangingRoom() {
                 <h2>What Is VR Changing Room?</h2>
 
                 <p>
-                    VR Changing Room is an advanced AI-powered virtual fitting feature built into our
-                    website and mobile experience. When you find an item you like, you’ll be able to tap a
-                    button to launch VR Changing Room, which activates your front-facing camera and turns
-                    your screen into a live mirror.
+                    VR Changing Room is being developed as an AI-assisted fitting experience for the AnyHJS
+                    website and future mobile tools. From a product page, the planned flow will let you open
+                    the feature, allow camera access and use the front-facing camera as a live preview area.
                 </p>
 
                 <p>
-                    Using cutting-edge computer vision and neural network technology, our system
-                    recognises your body in the camera feed and overlays the selected clothing item onto
-                    you in real time. As you move, turn, or adjust your phone, the garment moves with you –
-                    updating dynamically so you can see how it fits, flows and looks from different angles.
-                    This is far more than a simple filter: it’s a dedicated virtual try-on engine designed
-                    specifically for fashion.
+                    Computer-vision and neural-network technology would be used to identify your position in
+                    the camera feed and place a digital version of the selected garment over the image. As
+                    you move or change your angle, the preview is intended to respond with you so you can
+                    inspect the overall look from more than one position. The feature is being built around
+                    clothing rather than as a general-purpose camera effect.
                 </p>
 
-                <h2>Why VR Changing Room Is a Game-Changer</h2>
+                <h2>What the Experience Is Designed to Offer</h2>
 
                 <ul>
                     <li>
-                        <strong>Try before you buy – virtually:</strong> See what you’d look like in any
-                        item before committing to a purchase.
+                        <strong>Preview before choosing:</strong> Get a visual idea of how a selected item
+                        could look as part of your outfit before moving to checkout.
                     </li>
                     <li>
-                        <strong>Real-time, live preview:</strong> The clothing stays aligned with your body
-                        as you move, just like looking into a physical mirror.
+                        <strong>Live camera view:</strong> The planned preview follows your position as you
+                        move, creating a more interactive view than a static product image.
                     </li>
                     <li>
-                        <strong>Confidence in your style:</strong> Avoid guesswork about whether something
-                        looks smart, casual, bold or subtle – you can see it on yourself instantly.
+                        <strong>More styling context:</strong> Compare whether a piece feels understated,
+                        formal, relaxed or bold while seeing it alongside your overall look.
                     </li>
                     <li>
-                        <strong>Perfect for a multi-brand platform:</strong> Test looks from multiple
-                        brands in one place without visiting different stores or websites.
+                        <strong>Useful across brands:</strong> Explore clothing from different labels through
+                        the same virtual fitting experience instead of switching between separate stores.
                     </li>
                     <li>
-                        <strong>Fewer returns, better outfits:</strong> Choose pieces that genuinely suit
-                        you, your body shape and your personal style, reducing disappointment and returns.
+                        <strong>More informed choices:</strong> A clearer visual preview can help you narrow
+                        down which pieces suit the look you are trying to create.
                     </li>
                 </ul>
 
                 <p>
-                    For shoppers who love variety but don’t want the uncertainty of blind online purchases,
-                    VR Changing Room offers the closest thing to stepping into a real changing room – only
-                    faster, smarter and available wherever you are.
+                    The aim is to give online shoppers another reference point when comparing clothing from
+                    a wide selection of brands. Rather than replacing normal product information, the virtual
+                    preview is intended to add a more immediate way to picture an outfit before choosing it.
                 </p>
 
                 <h2>How It Will Work</h2>
 
                 <ol>
-                    <li>Browse our website or app and find a piece you like.</li>
-                    <li>Tap the <strong>“Try in VR Changing Room”</strong> button on the product page.</li>
-                    <li>Allow camera access and position yourself in view of the front-facing camera.</li>
-                    <li>Watch as the selected item appears on your body in real time.</li>
-                    <li>Move, turn and adjust your angle to see how it looks from different perspectives.</li>
+                    <li>Browse AnyHJS and open a product you would like to preview.</li>
+                    <li>Choose the <strong>“Try in VR Changing Room”</strong> option on the product page.</li>
+                    <li>Give camera permission and position yourself within the front-facing camera view.</li>
+                    <li>See the selected garment placed into the live preview.</li>
+                    <li>Change your position or angle to inspect the look from different viewpoints.</li>
                 </ol>
 
                 <p>
-                    You’ll be able to switch between sizes, colours and styles quickly, so you can compare
-                    outfits and find the combination that feels just right before adding items to your
-                    basket.
+                    The planned experience will also make it possible to compare available colours, sizes
+                    and styles without leaving the preview, helping you explore different combinations before
+                    deciding which items you want to add to your basket.
                 </p>
 
                 <h2>Status: In Development</h2>
 
                 <p>
-                    VR Changing Room is a complex, cutting-edge feature and is currently in active
-                    development. Our AI and engineering teams are working hard to make sure the experience
-                    is accurate, responsive and easy to use across a wide range of devices.
+                    VR Changing Room is still an active development project. Building a responsive virtual
+                    try-on tool involves a number of technical challenges, and the aim is to make the final
+                    experience clear, reliable and practical across a useful range of supported devices.
                 </p>
 
                 <p>
-                    This feature is not yet available, but it’s a major part of our roadmap and will be
-                    rolled out in future updates. Keep an eye on this page and our social channels for
-                    previews, beta testing opportunities and launch announcements. We’re excited to bring
-                    the changing room to you – wherever you are.
+                    The feature cannot be used yet and remains part of the future AnyHJS roadmap. We will
+                    use this page and our social channels to share previews and launch information as work
+                    progresses, including any opportunities to test the experience before a wider release.
                 </p>
             </GenericPageSection>
         </div>
