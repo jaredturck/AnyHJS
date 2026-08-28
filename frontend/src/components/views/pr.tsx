@@ -7,33 +7,32 @@ export function PR() {
         <div>
             <ClothingBanner
                 title="Public Relations"
-                subtitle="Press, media & interview enquiries"
+                subtitle="Press, media and interview enquiries"
                 img_src={banner1}
             />
 
             <GenericPageSection
                 label="Press"
                 title="Public Relations"
-                subtitle="Information for journalists, media outlets and partners who want to feature or speak with AnyHJS."
+                subtitle="Details for journalists, media teams and partners interested in covering AnyHJS."
             >
                 <h1>Public Relations</h1>
 
                 <p>
-                    AnyHJS is an AI-driven fashion platform bringing together hundreds of global brands and
-                    independent creators into one connected shopping experience. From major names like Nike
-                    and Adidas to emerging labels and resellers, we’re rethinking how people discover,
-                    style and shop outfits online. Our focus on personalised recommendations, virtual try-on
-                    technology and multi-brand convenience places us at the intersection of fashion,
-                    technology and culture.
+                    AnyHJS is a fashion technology concept built around bringing products, outfit discovery
+                    and styling tools together in one place. The platform explores how shoppers could move
+                    between established labels, independent names and complete outfit ideas without treating
+                    every brand as a separate experience. Features in development include personalised styling,
+                    wardrobe tools and virtual try-on concepts, placing AnyHJS where fashion, retail and
+                    technology overlap.
                 </p>
 
                 <p>
-                    For press enquiries, media interviews, event invitations, product features or commentary
-                    on fashion, e-commerce or AI in retail, our PR team would be happy to help. Please
-                    contact us via our <strong>Contact</strong> page using the “Press / Media” option, or
-                    email our media team directly with details of your publication, deadline and the nature
-                    of your request. We can provide brand assets, spokesperson quotes, product information
-                    and background on our technology and roadmap upon request.
+                    Journalists and media teams can get in touch about interviews, event invitations, product
+                    features or commentary relating to fashion technology, online retail and AI-assisted
+                    styling. Use the <strong>Contact</strong> page and include the publication, deadline and
+                    subject of the request. Where relevant, we can provide approved brand assets, background
+                    information and further detail about the AnyHJS concept and product roadmap.
                 </p>
             </GenericPageSection>
         </div>
