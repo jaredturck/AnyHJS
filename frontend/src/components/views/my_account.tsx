@@ -34,7 +34,7 @@ function SurfaceForm({ className, children, ...props }: React.FormHTMLAttributes
 }
 
 function LogoutButton({ onClick }: { onClick: () => void }) {
-    return <button type="button" onClick={onClick} className="ml-auto mb-4 inline-flex items-center justify-center rounded-full border border-black/15 bg-gradient-to-b from-white/90 to-white/70 px-4 py-2 text-[0.82rem] font-extrabold uppercase tracking-[0.12em] text-zinc-900/90 shadow-[0_14px_32px_rgba(0,0,0,0.10),0_4px_12px_rgba(0,0,0,0.06)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-[2px] hover:border-lime-300/70 hover:shadow-[0_20px_44px_rgba(0,0,0,0.14),0_6px_16px_rgba(0,0,0,0.08)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-lime-400 focus-visible:outline-offset-4 sm:absolute sm:right-[clamp(0.75rem,2vw,1.25rem)] sm:top-[clamp(0.75rem,2vw,1.25rem)] sm:mb-0">Log out</button>;
+    return <button type="button" onClick={onClick} className="ml-auto mb-4 inline-flex items-center justify-center rounded-full border border-black/15 bg-gradient-to-b from-white/90 to-white/70 px-4 py-2 text-[0.82rem] font-extrabold uppercase tracking-[0.12em] text-zinc-900/90 shadow-[0_14px_32px_rgba(0,0,0,0.10),0_4px_12px_rgba(0,0,0,0.06)] transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-[2px] hover:border-lime-300/70 hover:shadow-[0_20px_44px_rgba(0,0,0,0.14),0_6px_16px_rgba(0,0,0,0.08)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-lime-400 focus-visible:outline-offset-4 sm:absolute sm:right-[clamp(0.75rem,2vw,1.25rem)] sm:top-[clamp(0.75rem,2vw,1.25rem)] sm:mb-0">Sign out</button>;
 }
 
 function UnderlineNavLink({ to, children, className }: { to: string; children: React.ReactNode; className?: string }) {
@@ -123,7 +123,7 @@ export function MyAccount({ auth, setAuth }: MyAccountProps) {
         setProfileBanner(null);
 
         await demoDelay();
-        setProfileBanner("Your details have been updated.");
+        setProfileBanner("Your account details are up to date.");
         setIsSavingProfile(false);
     };
 
@@ -131,22 +131,22 @@ export function MyAccount({ auth, setAuth }: MyAccountProps) {
 
     return (
         <div className="[&a]:text-inherit [&a]:no-underline text-zinc-900">
-            <ClothingBanner title="My Account" subtitle="Manage your orders, details and preferences in one place." img_src={myAccountBanner} />
+            <ClothingBanner title="My Account" subtitle="Keep your account details, order links and preferences together." img_src={myAccountBanner} />
 
             <div className="relative mx-auto w-full max-w-[70rem] px-[clamp(1rem,3vw,1.5rem)] py-[clamp(1.25rem,3vw,2rem)]">
                 <LogoutButton onClick={handleLogout} />
 
-                <GenericPageSection label="Account" title="My Account" subtitle="Your personal hub for orders, settings, support and smart styling tools.">
+                <GenericPageSection label="Account" title="Your AnyHJS Account" subtitle="A single place for settings, order information, support and upcoming styling features.">
                     <section className="mt-[clamp(1.5rem,3vw,2.25rem)]">
                         <SurfaceDiv className="p-[clamp(1.1rem,2.5vw,1.6rem)]">
                             <div className="max-w-[52rem] text-zinc-900/85">
-                                <h1 className="m-0 text-[clamp(1.55rem,3.2vw,2.1rem)] font-black leading-tight tracking-[-0.02em]">Welcome back.</h1>
-                                <p className="mt-4 text-[0.98rem] leading-[1.75] text-zinc-900/80">From here you can keep an eye on your latest orders, update your personal details, get help when you need it and explore our AI-powered styling tools – all in one place.</p>
+                                <h1 className="m-0 text-[clamp(1.55rem,3.2vw,2.1rem)] font-black leading-tight tracking-[-0.02em]">Good to see you again.</h1>
+                                <p className="mt-4 text-[0.98rem] leading-[1.75] text-zinc-900/80">Use this area to review your order shortcuts, adjust personal details, find support and discover the smart styling tools planned for AnyHJS.</p>
                             </div>
                         </SurfaceDiv>
 
                         <section className="mt-8">
-                            <SectionHeader title="Your details" subtitle="Review and update the information we use for delivery, support and personalised recommendations." />
+                            <SectionHeader title="Account details" subtitle="Check the information shown in your profile and update the fields you want to change." />
 
                             <SurfaceForm onSubmit={handleProfileSave} noValidate className="max-w-[52rem] p-[clamp(1.2rem,2.5vw,1.75rem)]">
                                 {profileBanner ? <BannerMessage>{profileBanner}</BannerMessage> : null}
@@ -168,48 +168,48 @@ export function MyAccount({ auth, setAuth }: MyAccountProps) {
                                     </Field>
                                 </div>
 
-                                <div className="mt-6 flex justify-start"><PrimaryButton disabled={isSavingProfile}>{isSavingProfile ? "Saving your details…" : "Save changes"}</PrimaryButton></div>
+                                <div className="mt-6 flex justify-start"><PrimaryButton disabled={isSavingProfile}>{isSavingProfile ? "Saving changes…" : "Save changes"}</PrimaryButton></div>
                             </SurfaceForm>
                         </section>
 
                         <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                            <StatCard label="Orders placed" value="0" note="View your full order history and past purchases." to="/track-orders" cta="See your orders" />
-                            <StatCard label="On the way" value="0" note="Track deliveries in real time and stay updated." to="/track-orders" cta="Track an order" />
-                            <StatCard label="Saved preferences" value="Personalised" note="Keep sizes, addresses and communication settings up to date." to="/account" cta="Manage preferences" />
+                            <StatCard label="Orders" value="0" note="Open your order area to review previous purchases when they appear." to="/track-orders" cta="View orders" />
+                            <StatCard label="Deliveries" value="0" note="Use tracking details to follow parcels that are currently on the way." to="/track-orders" cta="Track delivery" />
+                            <StatCard label="Preferences" value="Ready" note="Review the profile and account options connected with your shopping experience." to="/account" cta="View preferences" />
                         </div>
 
-                        <section className="mt-[clamp(2.25rem,4vw,3rem)]"><SectionHeader title="Recent Orders" subtitle="Quickly jump back into your most recent purchases. Open an order to see tracking details, invoices and return options." /><OrdersCarousel><OrderCard title="No orders yet" to="/track-orders" cta="Go to order history">When you place your first order, it will appear here with a quick summary and a link to track it.</OrderCard></OrdersCarousel></section>
+                        <section className="mt-[clamp(2.25rem,4vw,3rem)]"><SectionHeader title="Latest Orders" subtitle="Your newest purchases would appear here with quick links to delivery, invoice and return information." /><OrdersCarousel><OrderCard title="Nothing here yet" to="/track-orders" cta="Open order tracking">Once an order has been placed, this space can show a short summary and provide a direct route to its tracking details.</OrderCard></OrdersCarousel></section>
 
                         <section className="mt-[clamp(2.25rem,4vw,3rem)]">
-                            <SectionHeader title="Quick Actions" subtitle="Update your details, manage addresses and keep your account secure in just a few clicks." />
+                            <SectionHeader title="Account Shortcuts" subtitle="Jump directly to the settings and details you are most likely to need." />
                             <CardsAutoGrid min={220}>
-                                <InfoCard title="Personal details" to="/account" cta="Edit personal information">Edit your name, contact details and default preferences so everything stays up to date.</InfoCard>
-                                <InfoCard title="Addresses" to="/account" cta="Manage delivery addresses">Add, edit or remove delivery addresses to speed up checkout and make sure orders go to the right place.</InfoCard>
-                                <InfoCard title="Security" to="/change-password" cta="Change password">Change your password and keep your account secure across all your devices.</InfoCard>
-                                <InfoCard title="Login &amp; email" to="/reset-email" cta="Change email address">Update the email you use to sign in and receive order updates from AnyHJS.</InfoCard>
+                                <InfoCard title="Profile information" to="/account" cta="Update profile details">Change the name, contact information and profile preferences shown in your account.</InfoCard>
+                                <InfoCard title="Delivery addresses" to="/account" cta="Review addresses">Manage the addresses associated with future delivery and checkout screens.</InfoCard>
+                                <InfoCard title="Password" to="/change-password" cta="Update password">Open the password-change form and preview the security settings for your account.</InfoCard>
+                                <InfoCard title="Account email" to="/reset-email" cta="Update email">Change the email address associated with the account experience.</InfoCard>
                             </CardsAutoGrid>
                         </section>
 
                         <section className="mt-[clamp(2.25rem,4vw,3rem)]">
-                            <SectionHeader title="Help, Shipping &amp; Returns" subtitle="Got a question about delivery, sizing, refunds or anything else? Start here – or reach out to our team." />
+                            <SectionHeader title="Support, Delivery &amp; Returns" subtitle="Find the information you need for common questions about orders, sizing, delivery and returns." />
                             <CardsAutoGrid min={220}>
-                                <SurfaceArticle lift className="gap-2 border-lime-300/60 p-6"><TagPill>Need help?</TagPill><h3 className="m-0 text-[1rem] font-black tracking-[-0.01em]">Support Centre</h3><p className="m-0 text-[0.95rem] leading-[1.75] text-zinc-900/75">Browse FAQs, how-to guides and tips for shopping on AnyHJS. If you still need help, you can contact us directly from there.</p><UnderlineNavLink to="/support-centre">Go to Support Centre</UnderlineNavLink></SurfaceArticle>
-                                <SurfaceArticle lift className="gap-2 p-6"><h3 className="m-0 text-[1rem] font-black tracking-[-0.01em]">Shipping &amp; delivery</h3><p className="m-0 text-[0.95rem] leading-[1.75] text-zinc-900/75">Learn about delivery times, shipping options and where we deliver.</p><InlineLinksList><li><UnderlineNavLink to="/shipping">Shipping information</UnderlineNavLink></li><li><UnderlineNavLink to="/track-orders">Tracking your order</UnderlineNavLink></li></InlineLinksList></SurfaceArticle>
-                                <SurfaceArticle lift className="gap-2 p-6"><h3 className="m-0 text-[1rem] font-black tracking-[-0.01em]">Returns, refunds &amp; sizing</h3><p className="m-0 text-[0.95rem] leading-[1.75] text-zinc-900/75">Not quite right? Find out how to return items, when you’ll be refunded and how to find your perfect fit.</p><InlineLinksList><li><UnderlineNavLink to="/refunds">Returns &amp; refunds</UnderlineNavLink></li><li><UnderlineNavLink to="/sizing-guide">Size &amp; fit guide</UnderlineNavLink></li></InlineLinksList></SurfaceArticle>
-                                <InfoCard title="Contact us" to="/contact" cta="Go to contact page">Can’t find what you’re looking for? Our team is here to help with orders, products and more.</InfoCard>
+                                <SurfaceArticle lift className="gap-2 border-lime-300/60 p-6"><TagPill>Need help?</TagPill><h3 className="m-0 text-[1rem] font-black tracking-[-0.01em]">Support Centre</h3><p className="m-0 text-[0.95rem] leading-[1.75] text-zinc-900/75">Start with answers to common questions about using AnyHJS, then use the contact page if you need another route to the team.</p><UnderlineNavLink to="/support-centre">Open Support Centre</UnderlineNavLink></SurfaceArticle>
+                                <SurfaceArticle lift className="gap-2 p-6"><h3 className="m-0 text-[1rem] font-black tracking-[-0.01em]">Shipping &amp; delivery</h3><p className="m-0 text-[0.95rem] leading-[1.75] text-zinc-900/75">Check expected delivery windows, shipping information and the available tracking links.</p><InlineLinksList><li><UnderlineNavLink to="/shipping">Delivery information</UnderlineNavLink></li><li><UnderlineNavLink to="/track-orders">Track a parcel</UnderlineNavLink></li></InlineLinksList></SurfaceArticle>
+                                <SurfaceArticle lift className="gap-2 p-6"><h3 className="m-0 text-[1rem] font-black tracking-[-0.01em]">Returns, refunds &amp; sizing</h3><p className="m-0 text-[0.95rem] leading-[1.75] text-zinc-900/75">Review return conditions, refund information and general size guidance before choosing what works for you.</p><InlineLinksList><li><UnderlineNavLink to="/refunds">Return information</UnderlineNavLink></li><li><UnderlineNavLink to="/sizing-guide">Sizing guide</UnderlineNavLink></li></InlineLinksList></SurfaceArticle>
+                                <InfoCard title="Contact AnyHJS" to="/contact" cta="Open contact form">Use the contact page for questions, feedback and general enquiries about the project.</InfoCard>
                             </CardsAutoGrid>
                         </section>
 
                         <section className="mt-[clamp(2.25rem,4vw,3rem)]">
-                            <SectionHeader title="Discover Our Smart Styling Tools" subtitle="Take your wardrobe further with AI-driven features built to help you get dressed faster and shop smarter." />
+                            <SectionHeader title="Explore Future Styling Features" subtitle="See the AI-assisted wardrobe and virtual-preview ideas being developed around the AnyHJS experience." />
                             <CardsAutoGrid min={240}>
-                                <FeatureCard title="VR Wardrobe" to="/vr-wardrobe" cta="Learn more">Snap a photo of pieces you already own and let our AI build outfits around them using items from AnyHJS.</FeatureCard>
-                                <FeatureCard title="AI Stylist" to="/ai-stylist" cta="Meet your AI stylist">Describe your occasion in plain language and get complete, ready-to-shop outfits tailored to your vibe, budget and preferred brands.</FeatureCard>
-                                <FeatureCard title="VR Changing Room" to="/vr-changing-room" cta="Preview the experience">See outfits on your body in real time using your camera – like a virtual changing room you can access anywhere.</FeatureCard>
+                                <FeatureCard title="VR Wardrobe" to="/vr-wardrobe" cta="Explore the concept">Start from a photo of clothing you already own and discover pieces that could work around it.</FeatureCard>
+                                <FeatureCard title="AI Stylist" to="/ai-stylist" cta="See how it is planned">Describe the occasion or style you want and explore how conversational AI could build complete outfit ideas.</FeatureCard>
+                                <FeatureCard title="VR Changing Room" to="/vr-changing-room" cta="View the preview">Learn about the planned camera-based experience for visualising selected clothing as part of your look.</FeatureCard>
                             </CardsAutoGrid>
                         </section>
 
-                        <section className="mt-[clamp(2.75rem,4vw,3.5rem)] border-t border-black/10 pt-7"><SectionHeader title="Legal &amp; Policies" subtitle="The important small print – how we run our platform and look after your data." /><div className="flex flex-wrap items-center gap-3 text-[0.86rem] text-zinc-900/70"><UnderlineNavLink to="/terms-and-conditions">Terms &amp; Conditions</UnderlineNavLink><span className="text-zinc-900/40">•</span><UnderlineNavLink to="/privacy-policy">Privacy Policy</UnderlineNavLink><span className="text-zinc-900/40">•</span><UnderlineNavLink to="/cookie-policy">Cookie Policy</UnderlineNavLink></div></section>
+                        <section className="mt-[clamp(2.75rem,4vw,3.5rem)] border-t border-black/10 pt-7"><SectionHeader title="Legal &amp; Policies" subtitle="Read the terms and information explaining how the AnyHJS website and its data practices are presented." /><div className="flex flex-wrap items-center gap-3 text-[0.86rem] text-zinc-900/70"><UnderlineNavLink to="/terms-and-conditions">Terms &amp; Conditions</UnderlineNavLink><span className="text-zinc-900/40">•</span><UnderlineNavLink to="/privacy-policy">Privacy Policy</UnderlineNavLink><span className="text-zinc-900/40">•</span><UnderlineNavLink to="/cookie-policy">Cookie Policy</UnderlineNavLink></div></section>
                     </section>
                 </GenericPageSection>
             </div>
