@@ -131,8 +131,8 @@ function ClothingPage({
 export function MensClothing() {
   return (
     <ClothingPage
-      bannerTitle="TOP MEN COLLECTION"
-      bannerSubtitle="OUR LATEST COLLECTION"
+      bannerTitle="MEN'S FASHION EDIT"
+      bannerSubtitle="EXPLORE THE LATEST LOOKS"
       bannerSrc={men_banner}
       products={mensProducts}
     />
@@ -142,8 +142,8 @@ export function MensClothing() {
 export function WomensClothing() {
   return (
     <ClothingPage
-      bannerTitle="TOP WOMEN COLLECTION"
-      bannerSubtitle="OUR LATEST COLLECTION"
+      bannerTitle="WOMEN'S FASHION EDIT"
+      bannerSubtitle="EXPLORE THE LATEST LOOKS"
       bannerSrc={women_banner}
       products={womensProducts}
     />

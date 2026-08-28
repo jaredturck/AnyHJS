@@ -4,9 +4,9 @@ import { GenericPageSection } from "./generic_text";
 export function NotFound() {
   return (
     <div className="pt-16">
-      <GenericPageSection label="404" title="404 - Page Not Found" subtitle="The page you are looking for does not exist.">
+      <GenericPageSection label="404" title="404 - Page Not Found" subtitle="We couldn’t find the page you were trying to open.">
         <p>
-          Please check the URL for mistakes or return to the <Link to="/">homepage</Link>.
+          Check the address and try again, or head back to the <Link to="/">homepage</Link>.
         </p>
       </GenericPageSection>
     </div>

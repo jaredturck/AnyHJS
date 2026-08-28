@@ -8,14 +8,14 @@ export function Blog() {
     <div>
       <ClothingBanner
         title="AnyHJS Blog"
-        subtitle="News, drops and stories from the world of fashion and tech."
+        subtitle="Ideas, releases and stories where fashion meets technology."
         img_src={banner1}
       />
 
       <GenericPageSection
         label="Stories"
-        title="Latest from AnyHJS"
-        subtitle="Catch up on trends, collabs and product updates from across the platform."
+        title="From the AnyHJS Journal"
+        subtitle="Explore style trends, collaborations and updates from around the platform."
       >
         <div className="mt-6">
           <div className="flex flex-col gap-5">

@@ -7,40 +7,38 @@ export function PaymentMethods() {
         <div>
             <ClothingBanner
                 title="Payment Methods"
-                subtitle="Simple, secure ways to pay for your order"
+                subtitle="Familiar ways to pay when you reach checkout"
                 img_src={banner1}
             />
 
             <GenericPageSection
                 label="Payments"
-                title="Payment Information"
-                subtitle="Learn about the payment options we support and how your details are handled at checkout."
+                title="Ways to Pay"
+                subtitle="An overview of the payment options shown in the AnyHJS checkout experience."
             >
                 <h1>Payment Information</h1>
 
                 <p>
-                    Shopping with us is simple and secure. Because we bring hundreds of leading
-                    brands together in one place, you can fill your basket with pieces from
-                    different labels and check out in a single, streamlined payment. No more
-                    jumping between multiple brand websites – just one easy checkout for all
-                    your favourite styles.
+                    AnyHJS is designed around bringing products from different fashion labels into
+                    one shopping journey. Rather than completing a separate checkout with each
+                    brand, the intended experience keeps the basket together so you can review the
+                    full order and choose a payment option in one place.
                 </p>
 
                 <p>
-                    We also offer a wide range of payment options, so you can pay in the way that
-                    suits you best. From major debit and credit cards to digital wallets and
-                    flexible “buy now, pay later” providers, our goal is to make checkout fast,
-                    familiar and hassle-free. Your payment details are processed securely, and
-                    you’ll see a full summary of your order and chosen payment method before you
-                    confirm.
+                    The checkout design supports a selection of familiar card and digital-payment
+                    choices, giving shoppers different ways to complete an order. Available options
+                    can depend on location, device and provider support. Before anything is confirmed,
+                    the checkout shows the selected payment method alongside the order summary so the
+                    details can be reviewed together.
                 </p>
 
-                <h2>Accepted Payment Methods</h2>
+                <h2>Payment Options</h2>
 
                 <p>
-                    Below is a general overview of the payment methods we currently support.
-                    Availability may vary by country and currency, and you’ll always see the
-                    latest options displayed at checkout.
+                    The table below shows the payment methods represented in the current AnyHJS
+                    checkout design. Provider availability can differ by region or currency, so the
+                    options displayed during checkout are the ones that apply to that order.
                 </p>
 
                 <table>
@@ -58,57 +56,56 @@ export function PaymentMethods() {
                             </td>
                             <td>Credit &amp; Debit Cards</td>
                             <td>
-                                Pay quickly with all major card providers. Great for fast, secure
-                                one-time payments.
+                                Major card networks represented as standard one-time payment options
+                                within the checkout.
                             </td>
                         </tr>
                         <tr>
                             <td>Diners Club</td>
                             <td>Credit Card</td>
                             <td>
-                                Accepted on many international orders, subject to issuer and
-                                region.
+                                Shown as an additional card option where the issuer and region support it.
                             </td>
                         </tr>
                         <tr>
                             <td>PayPal</td>
                             <td>Digital Wallet</td>
                             <td>
-                                Check out using your PayPal balance or linked cards without
-                                sharing card details with us.
+                                A wallet option that can use a PayPal balance or a payment method linked
+                                to the shopper&apos;s PayPal account.
                             </td>
                         </tr>
                         <tr>
                             <td>Apple&nbsp;Pay &amp; Google&nbsp;Pay</td>
                             <td>Mobile Wallets</td>
                             <td>
-                                Speedy checkout on supported devices using your stored cards and
-                                biometric security.
+                                Device-based wallet options intended to make supported checkouts quicker
+                                using payment details already saved on the device.
                             </td>
                         </tr>
                         <tr>
                             <td>Shop&nbsp;Pay</td>
                             <td>Accelerated Checkout</td>
                             <td>
-                                Save your details securely for even faster repeat purchases across
-                                supported Shopify stores.
+                                An accelerated checkout option designed around securely saved details on
+                                compatible Shop Pay experiences.
                             </td>
                         </tr>
                         <tr>
                             <td>Klarna &amp; Clearpay</td>
                             <td>Buy Now, Pay Later</td>
                             <td>
-                                Split the cost of your order into instalments where available,
-                                subject to approval and terms.
+                                Instalment-style payment options where available, subject to each provider&apos;s
+                                eligibility checks and terms.
                             </td>
                         </tr>
                     </tbody>
                 </table>
 
                 <p>
-                    You’ll see all available payment logos and options on the checkout page. If
-                    your preferred provider is supported, simply select it at checkout and follow
-                    the on-screen instructions to complete your purchase.
+                    Payment logos and available choices are shown as part of the checkout interface.
+                    When a supported provider is selected, the relevant on-screen steps explain what
+                    is needed to continue with that payment method.
                 </p>
             </GenericPageSection>
         </div>

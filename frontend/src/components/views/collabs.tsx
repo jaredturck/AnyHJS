@@ -6,22 +6,22 @@ export function Collabs() {
   return (
     <div>
       <ClothingBanner
-        title="Collaborate with AnyHJS"
-        subtitle="Partner, create and sell with our multi-brand fashion platform"
+        title="Work with AnyHJS"
+        subtitle="Create, partner and explore new ways to reach fashion audiences"
         img_src={banner1}
       />
 
       <GenericPageSection
         label="Collaboration"
-        title="Collaborate with AnyHJS"
-        subtitle="Information for influencers, brands, designers and sellers who want to work with us."
+        title="Work with AnyHJS"
+        subtitle="A starting point for creators, brands, designers and sellers interested in working with us."
       >
         <div className="space-y-8">
           <p className="text-[0.98rem] leading-7 text-black/75">
-            At AnyHJS, we’re building more than a store – we’re creating a connected fashion ecosystem.
-            From global brands like Nike and Adidas to emerging designers, fashion students and independent
-            resellers, our goal is to bring the entire style community together in one place. If you’re
-            interested in collaborating, advertising or selling through our platform, this page is for you.
+            AnyHJS is being built as a place where fashion discovery, styling and commerce can sit side by
+            side. That creates room for more than traditional retail: creators can shape edits, designers can
+            introduce new work and brands can take part in campaigns built around complete looks. If you have
+            an idea that fits that direction, we’re interested in hearing it.
           </p>
 
           <hr className="border-black/10" />
@@ -32,17 +32,17 @@ export function Collabs() {
             </h2>
 
             <p className="text-[0.98rem] leading-7 text-black/75">
-              Are you a fashion creator, stylist or content producer with an engaged audience on Instagram,
-              TikTok, YouTube or other platforms? We’d love to work with you. As a multi-brand hub, AnyHJS
-              gives you a single place to showcase complete outfits from hundreds of labels, making it easy
-              for your followers to shop your looks in just a few clicks.
+              Fashion creators, stylists and content makers can use AnyHJS as a backdrop for outfit-led
+              partnerships. Because the concept brings different labels into one shopping experience, a
+              collaboration can focus on an entire look rather than a single product or brand. That can make
+              it easier to turn inspiration into something an audience can explore for themselves.
             </p>
 
             <p className="text-[0.98rem] leading-7 text-black/75">
-              We offer flexible collaboration opportunities, including sponsored content, featured
-              collections, outfit edits, affiliate links and long-term ambassador partnerships. Whether
-              you’re just starting to grow your audience or already have a large following, we’re open to
-              hearing your ideas and building something that works for both sides.
+              Potential formats include sponsored content, creator edits, affiliate activity, featured
+              collections and longer-term ambassador work. We’re open to established creators as well as
+              smaller voices with a clear point of view, and we’d rather shape the format around a strong idea
+              than force every partnership into the same template.
             </p>
           </section>
 
@@ -54,17 +54,17 @@ export function Collabs() {
             </h2>
 
             <p className="text-[0.98rem] leading-7 text-black/75">
-              If you’re a fashion designer, brand owner or fashion student with your own pieces to showcase,
-              AnyHJS can help you connect with a wider audience. We already stock products from hundreds of
-              established brands, and we’re actively exploring ways to highlight unique, independent talent
-              alongside them.
+              Independent labels, designers and fashion students often have strong work without the same
+              visibility as larger names. AnyHJS is intended to create more room for that kind of discovery,
+              placing emerging ideas alongside familiar brands rather than separating them into a different
+              corner of the experience.
             </p>
 
             <p className="text-[0.98rem] leading-7 text-black/75">
-              From capsule collections to limited drops and co-branded campaigns, we’re interested in
-              creative collaborations that bring something fresh to our community. If you have a collection,
-              project or concept you’d like to launch, we can help with visibility, logistics and a ready-made
-              audience of style-conscious shoppers.
+              We’re interested in concepts such as capsule edits, limited releases, editorial features and
+              co-branded campaigns. If you’re developing a collection, project or launch that could work well
+              with the AnyHJS audience, send us the idea, the visual direction and any relevant portfolio or
+              lookbook material.
             </p>
           </section>
 
@@ -76,25 +76,24 @@ export function Collabs() {
             </h2>
 
             <p className="text-[0.98rem] leading-7 text-black/75">
-              One of our major future features is the <strong>AnyHJS Marketplace</strong> – a space where
-              anyone can list and sell clothing through our platform. Think of it as a fashion-first
-              marketplace where you can sell pre-loved items, custom pieces or small batch designs, while
-              we handle the heavy lifting.
+              A planned future area of AnyHJS is the <strong>AnyHJS Marketplace</strong>, designed to let
+              independent sellers list pre-owned fashion, custom pieces and small-run designs alongside the
+              wider shopping experience. The aim is to make selling feel like part of the same fashion-first
+              platform rather than a completely separate service.
             </p>
 
-            <p className="text-[0.98rem] leading-7 text-black/75">Our vision is simple:</p>
+            <p className="text-[0.98rem] leading-7 text-black/75">The proposed flow is straightforward:</p>
 
             <ul className="list-disc space-y-2 pl-6 text-[0.98rem] leading-7 text-black/75 marker:text-[#BDFF00]">
-              <li>You list your items on our site.</li>
-              <li>We handle the payments and order processing.</li>
-              <li>You ship the items, and we take a small commission on each sale.</li>
+              <li>Sellers create listings for the pieces they want to offer.</li>
+              <li>The marketplace experience manages the customer order and payment flow.</li>
+              <li>The seller dispatches the item, with AnyHJS taking an agreed commission from the sale.</li>
             </ul>
 
             <p className="text-[0.98rem] leading-7 text-black/75">
-              This means you get access to the same audience that shops big brands like Nike and Adidas on
-              our platform, while enjoying streamlined logistics and secure payment handling. The Marketplace
-              feature is currently in development – watch this space for launch details and seller onboarding
-              information.
+              This marketplace is a product concept and is not currently live. Seller requirements,
+              commissions, fulfilment details and onboarding terms would be published before the feature is
+              made available.
             </p>
           </section>
 
@@ -109,55 +108,35 @@ export function Collabs() {
               <table className="w-full border-separate border-spacing-0 overflow-hidden rounded-2xl border border-black/10 bg-white/70 text-sm shadow-[0_16px_36px_rgba(0,0,0,0.08),0_2px_10px_rgba(0,0,0,0.05)]">
                 <thead className="bg-black/[0.04]">
                   <tr>
-                    <th className="px-4 py-3 text-left text-[0.75rem] font-extrabold uppercase tracking-[0.12em] text-black/60">
-                      Collaboration Type
-                    </th>
-                    <th className="px-4 py-3 text-left text-[0.75rem] font-extrabold uppercase tracking-[0.12em] text-black/60">
-                      Who It’s For
-                    </th>
-                    <th className="px-4 py-3 text-left text-[0.75rem] font-extrabold uppercase tracking-[0.12em] text-black/60">
-                      What It Involves
-                    </th>
+                    <th className="px-4 py-3 text-left text-[0.75rem] font-extrabold uppercase tracking-[0.12em] text-black/60">Collaboration Type</th>
+                    <th className="px-4 py-3 text-left text-[0.75rem] font-extrabold uppercase tracking-[0.12em] text-black/60">Who It’s For</th>
+                    <th className="px-4 py-3 text-left text-[0.75rem] font-extrabold uppercase tracking-[0.12em] text-black/60">What It Can Include</th>
                   </tr>
                 </thead>
 
                 <tbody className="[&>tr:nth-child(even)]:bg-black/[0.02] [&>tr:hover]:bg-[#BDFF00]/10">
                   <tr className="transition-colors [&>td]:border-b [&>td]:border-black/10 last:[&>td]:border-b-0">
-                    <td className="px-4 py-3 align-top text-black/80">Influencer Partnerships</td>
-                    <td className="px-4 py-3 align-top text-black/80">
-                      Social media creators, stylists, fashion influencers
-                    </td>
-                    <td className="px-4 py-3 align-top text-black/80">
-                      Sponsored outfits, affiliate links, featured edits, co-branded campaigns.
-                    </td>
+                    <td className="px-4 py-3 align-top text-black/80">Creator Partnerships</td>
+                    <td className="px-4 py-3 align-top text-black/80">Social creators, stylists and fashion voices</td>
+                    <td className="px-4 py-3 align-top text-black/80">Sponsored looks, affiliate activity, creator edits and campaign content.</td>
                   </tr>
 
                   <tr className="transition-colors [&>td]:border-b [&>td]:border-black/10 last:[&>td]:border-b-0">
-                    <td className="px-4 py-3 align-top text-black/80">Designer &amp; Brand Collaborations</td>
-                    <td className="px-4 py-3 align-top text-black/80">
-                      Established brands, emerging designers, fashion students
-                    </td>
-                    <td className="px-4 py-3 align-top text-black/80">
-                      Capsule collections, limited drops, joint promotions and editorial features.
-                    </td>
+                    <td className="px-4 py-3 align-top text-black/80">Designer &amp; Brand Projects</td>
+                    <td className="px-4 py-3 align-top text-black/80">Brands, emerging designers and fashion students</td>
+                    <td className="px-4 py-3 align-top text-black/80">Capsule edits, limited releases, joint campaigns and editorial features.</td>
                   </tr>
 
                   <tr className="transition-colors [&>td]:border-b [&>td]:border-black/10 last:[&>td]:border-b-0">
-                    <td className="px-4 py-3 align-top text-black/80">Marketplace Selling (Coming Soon)</td>
-                    <td className="px-4 py-3 align-top text-black/80">
-                      Independent sellers, resellers, individuals with clothes to sell
-                    </td>
-                    <td className="px-4 py-3 align-top text-black/80">
-                      List items on AnyHJS, we manage payments and logistics, you earn minus a small commission.
-                    </td>
+                    <td className="px-4 py-3 align-top text-black/80">Marketplace Selling (Planned)</td>
+                    <td className="px-4 py-3 align-top text-black/80">Independent sellers, resellers and small labels</td>
+                    <td className="px-4 py-3 align-top text-black/80">Product listings, customer orders and a commission-based selling model.</td>
                   </tr>
 
                   <tr className="transition-colors [&>td]:border-b [&>td]:border-black/10 last:[&>td]:border-b-0">
-                    <td className="px-4 py-3 align-top text-black/80">Advertising &amp; Media Campaigns</td>
-                    <td className="px-4 py-3 align-top text-black/80">Brands, agencies, creative studios</td>
-                    <td className="px-4 py-3 align-top text-black/80">
-                      Display placements, sponsored sections, integrated content and social amplification.
-                    </td>
+                    <td className="px-4 py-3 align-top text-black/80">Advertising &amp; Media</td>
+                    <td className="px-4 py-3 align-top text-black/80">Brands, agencies and creative studios</td>
+                    <td className="px-4 py-3 align-top text-black/80">Sponsored placements, integrated content and coordinated social campaigns.</td>
                   </tr>
                 </tbody>
               </table>
@@ -172,36 +151,28 @@ export function Collabs() {
             </h2>
 
             <p className="text-[0.98rem] leading-7 text-black/75">
-              If you’re interested in collaborating with AnyHJS, we’d love to hear from you. There are several
-              ways to reach out:
+              The easiest way to start a conversation is through the AnyHJS contact page. Tell us what you’re
+              proposing and include enough context for us to understand where the idea could fit.
             </p>
 
             <ul className="list-disc space-y-2 pl-6 text-[0.98rem] leading-7 text-black/75 marker:text-[#BDFF00]">
-              <li>
-                Use the contact form on our <strong>Contact</strong> page and select “Collaboration / Partnership”
-                from the subject options.
-              </li>
-              <li>Send us an email with your proposal, media kit or portfolio (including links to your social channels, if relevant).</li>
-              <li>
-                Reach out via our social media platforms (Instagram, TikTok, YouTube, Pinterest, Twitter/X, Discord,
-                Snapchat) and let us know you’re interested in working together.
-              </li>
+              <li>Use the contact form and choose the most relevant enquiry type.</li>
+              <li>Include a portfolio, media kit, lookbook or social links where they help explain the proposal.</li>
+              <li>You can also reach out through the AnyHJS social channels listed elsewhere on the site.</li>
             </ul>
 
-            <p className="text-[0.98rem] leading-7 text-black/75">To help us review your enquiry quickly, please include:</p>
+            <p className="text-[0.98rem] leading-7 text-black/75">A useful proposal usually covers:</p>
 
             <ul className="list-disc space-y-2 pl-6 text-[0.98rem] leading-7 text-black/75 marker:text-[#BDFF00]">
-              <li>A brief introduction about you or your brand.</li>
-              <li>
-                What kind of collaboration you’re interested in (influencer campaign, marketplace selling, designer collab, etc.).
-              </li>
-              <li>Any relevant links (social media profiles, website, portfolio, lookbook).</li>
+              <li>A short introduction to you, your brand or your project.</li>
+              <li>The type of collaboration you have in mind and what you want to create.</li>
+              <li>Relevant examples of previous work or channels where your audience can be seen.</li>
             </ul>
 
             <p className="text-[0.98rem] leading-7 text-black/75">
-              We review collaboration requests regularly and will get back to you if we see a good fit with our
-              audience and roadmap. Even if your idea is experimental or early-stage, we’re always open to creative
-              conversations – especially when it pushes fashion and technology forward.
+              We review opportunities against the direction of the platform and the audience we’re building.
+              Not every idea will be the right fit, but original concepts are always easier to consider when
+              the creative goal is clear from the start.
             </p>
           </section>
 
@@ -213,14 +184,13 @@ export function Collabs() {
             </h2>
 
             <p className="text-[0.98rem] leading-7 text-black/75">
-              AnyHJS is built on the idea that fashion is better when it’s shared. Whether you’re inspiring people
-              with your outfits, designing your own collections, reselling pieces you love, or planning a bigger
-              campaign, our platform is here to help you reach more people and make more impact.
+              The strongest fashion ideas rarely happen in isolation. AnyHJS is intended to give creators,
+              shoppers, designers and sellers more ways to connect around the same looks and products.
             </p>
 
             <p className="text-[0.98rem] leading-7 text-black/75">
-              Follow us on social media, explore our latest drops and stay tuned as we roll out the Marketplace and
-              other collaboration features. We’re excited to build the future of fashion together – one collab at a time.
+              Follow the project, explore the latest features and keep an eye on the roadmap as collaboration
+              and marketplace ideas develop further. There will be more ways to take part as the platform grows.
             </p>
           </section>
         </div>

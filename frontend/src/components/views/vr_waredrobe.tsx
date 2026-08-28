@@ -8,71 +8,69 @@ export function VRWardrobe() {
         <div>
             <ClothingBanner
                 title="VR Wardrobe"
-                subtitle="Turn your existing wardrobe into AI-powered outfits (Coming soon)"
+                subtitle="Build new outfit ideas around clothes you already own (Coming soon)"
                 img_src={banner1}
             />
 
             <GenericPageSection
                 label="Labs"
                 title="VR Wardrobe (Coming Soon)"
-                subtitle="An upcoming feature in our mobile app that uses AI to build outfits around the clothes you already own."
+                subtitle="A planned mobile feature that uses AI to suggest outfits around items already in your wardrobe."
             >
                 <h1>VR Wardrobe (Coming Soon)</h1>
 
                 <p>
-                    Say hello to the future of getting dressed. <strong>VR Wardrobe</strong> is an upcoming
-                    feature in our mobile app that will transform the way you style the clothes you already
-                    own. Simply snap a photo of any item in your wardrobe – a shirt, pair of trousers,
-                    jacket, dress, or even your favourite sneakers – and our AI will instantly analyse it
-                    and recommend pieces from our store that match perfectly.
+                    <strong>VR Wardrobe</strong> is being designed to make the clothes you already own part
+                    of the AnyHJS experience. Take a photo of an item from your wardrobe – whether that is a
+                    shirt, trousers, a jacket, dress or favourite pair of trainers – and the feature will
+                    analyse what it sees before suggesting new pieces that could work alongside it.
                 </p>
 
                 <p>
-                    Behind the scenes, VR Wardrobe uses advanced <strong>convolutional neural networks</strong>
-                    and fashion-trained AI models to understand the item’s type, colours, patterns and overall
-                    vibe. It doesn’t just match colours – it looks at current fashion trends, social media
-                    styles, and what’s in or out of season, then suggests outfits from hundreds of brands
-                    all in one place. No more guessing what goes with what, no more endlessly scrolling:
-                    you get smart, curated outfit suggestions in seconds.
+                    The concept uses image-recognition technology and <strong>convolutional neural networks</strong>
+                    with fashion-focused models to interpret details such as garment type, colour, pattern and
+                    overall style. From there, it can consider season and wider fashion trends before bringing
+                    together compatible products from brands across AnyHJS. The aim is to make outfit discovery
+                    feel focused from the start, rather than asking you to search through every product yourself.
                 </p>
 
                 <figure>
                     <img
                         src={vrWardrobeImage}
-                        alt="Preview of VR Wardrobe feature"
+                        alt="Preview of the planned VR Wardrobe feature"
                         style={{ width: "100%", borderRadius: "12px" }}
                     />
                 </figure>
 
-                <h2>What VR Wardrobe Will Let You Do</h2>
+                <h2>What You Will Be Able to Do</h2>
 
                 <ul>
-                    <li>Take a photo of any item in your wardrobe and let our AI identify it automatically.</li>
-                    <li>Get instant outfit suggestions that complement your existing clothes.</li>
-                    <li>Discover new pieces from hundreds of brands without visiting multiple websites.</li>
-                    <li>Stay on-trend with recommendations informed by real-time fashion and social media trends.</li>
-                    <li>Save your favourite AI-generated outfits and shop them directly through our platform.</li>
+                    <li>Photograph a piece from your wardrobe and let the feature recognise the item.</li>
+                    <li>See outfit suggestions chosen to work with clothing you already have.</li>
+                    <li>Explore matching pieces from multiple brands without opening separate stores.</li>
+                    <li>Discover recommendations that can take season and current fashion trends into account.</li>
+                    <li>Keep favourite outfit combinations and explore the suggested products on AnyHJS.</li>
                 </ul>
 
                 <p>
-                    Whether you’re building a capsule wardrobe or planning a big night out, VR Wardrobe
-                    helps you look stylish without needing to be a fashion expert. It bridges the gap
-                    between the clothes you already own and the huge range of items available on our site,
-                    making it easier than ever to build outfits you actually love.
+                    Whether you are simplifying your wardrobe or getting ready for a particular occasion,
+                    VR Wardrobe is intended to give the clothes you already own a useful starting point.
+                    It connects those pieces with the wider selection available through AnyHJS, helping you
+                    explore combinations that fit naturally with what is already in your wardrobe.
                 </p>
 
                 <h2>Status: Work in Progress</h2>
 
                 <p>
-                    Our developers are currently working hard to bring VR Wardrobe to life and integrate it
-                    seamlessly into our mobile app. This feature is still in development and not yet
-                    available to use, but it’s a key part of our long-term vision for AnyHJS.
+                    VR Wardrobe is currently being developed for the future AnyHJS mobile experience. The
+                    feature is not available to use yet, but it remains an important part of the longer-term
+                    plan for connecting AI-assisted styling with the clothes people already own.
                 </p>
 
                 <p>
-                    Check back here for updates, or follow us on social media to be the first to know when
-                    VR Wardrobe launches. We can’t wait to help you turn your existing wardrobe into a
-                    smarter, more stylish, AI-powered experience.
+                    We will share more information here and through our social channels as development moves
+                    forward. The goal is a simple experience that turns an existing wardrobe item into a
+                    useful starting point for discovering new combinations and pieces.
                 </p>
             </GenericPageSection>
         </div>

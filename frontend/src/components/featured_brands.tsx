@@ -15,7 +15,7 @@ export function FeaturedBrands() {
     <section className="relative mx-auto my-8 max-w-[var(--max-page-width)] overflow-hidden rounded-[1.25rem] border border-[rgba(26,26,26,0.08)] bg-[var(--cream-white)] px-[clamp(1.25rem,4vw,3rem)] py-[clamp(3rem,5vw,4.5rem)] text-[var(--soft-black)] shadow-[0_12px_34px_rgba(0,0,0,0.08),0_2px_10px_rgba(0,0,0,0.05)]">
       <div className="relative z-10 mb-[clamp(1.75rem,3vw,2.5rem)] flex items-center justify-center text-center">
         <h2 className="m-0 mx-auto max-w-[30em] text-[clamp(1.6rem,3vw,2.25rem)] font-medium uppercase leading-[1.1] tracking-[0.12em]">
-          FROM 10,000 BRANDS TO ONE PERFECT LOOK - DISCOVER YOUR STYLE.
+          HUNDREDS OF BRANDS. ONE PLACE TO BUILD YOUR LOOK.
         </h2>
       </div>
 

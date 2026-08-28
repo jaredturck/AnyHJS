@@ -7,21 +7,21 @@ export function Shipping() {
         <div>
             <ClothingBanner
                 title="Shipping"
-                subtitle="Delivery times, regions & charges"
+                subtitle="Delivery estimates, destinations and charges"
                 img_src={banner1}
             />
 
             <GenericPageSection
                 label="Shipping"
-                title="Shipping Information"
-                subtitle="Find the latest details on how we ship your orders, estimated delivery times, and how delivery charges are applied."
+                title="Delivery Information"
+                subtitle="See the expected delivery times for each region and how shipping charges are worked out."
             >
                 <p>
-                    On this page you can find the latest information about how we ship your
-                    orders, including estimated delivery times and how delivery charges are
-                    applied. Delivery times may vary depending on your location and other
-                    external factors, but we aim to get your order to you as quickly as
-                    possible.
+                    This page gives a general guide to delivery times and shipping charges for
+                    AnyHJS orders. Actual arrival dates can vary depending on your destination,
+                    the items being sent and circumstances outside our control, but the aim is to
+                    dispatch orders promptly and provide a clear estimate before you confirm your
+                    purchase.
                 </p>
 
                 <table>
@@ -37,33 +37,33 @@ export function Shipping() {
                             <td>United Kingdom</td>
                             <td>3–4 working days</td>
                             <td>
-                                We aim to dispatch UK orders quickly so they arrive within
-                                3–4 working days.
+                                UK deliveries are generally expected within 3–4 working days
+                                once the order has been dispatched.
                             </td>
                         </tr>
                         <tr>
                             <td>Europe</td>
                             <td>Approximately 5 working days</td>
                             <td>
-                                European orders typically arrive within around 5 working
-                                days after dispatch.
+                                Deliveries to European destinations usually take around 5 working
+                                days from dispatch.
                             </td>
                         </tr>
                         <tr>
                             <td>Rest of World</td>
                             <td>Approximately 7 working days</td>
                             <td>
-                                International orders outside Europe usually arrive within
-                                about 1 week.
+                                Orders travelling outside Europe are generally expected to arrive
+                                in roughly 7 working days.
                             </td>
                         </tr>
                     </tbody>
                 </table>
 
                 <p>
-                    Delivery charges are calculated and displayed at checkout as part of your
-                    order total. The final shipping cost will depend on your delivery
-                    address and the items in your cart.
+                    Any applicable delivery charge is shown during checkout and included in the
+                    final order total. The amount can vary according to the delivery address,
+                    shipping option and the products included in the basket.
                 </p>
             </GenericPageSection>
         </div>

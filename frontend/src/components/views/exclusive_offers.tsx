@@ -7,54 +7,54 @@ export function ExclusiveOffers() {
         <div>
             <ClothingBanner
                 title="Exclusive Offers & Rewards"
-                subtitle="Loyalty perks, bulk order savings and community rewards"
+                subtitle="Extra value for returning shoppers, larger orders and community activity"
                 img_src={banner1}
             />
 
             <GenericPageSection
                 label="Offers"
-                title="Exclusive Offers & Rewards"
-                subtitle="Learn how loyalty, bulk orders and community engagement can unlock extra savings at AnyHJS."
+                title="Offers, Rewards & Perks"
+                subtitle="See how repeat shopping, bigger baskets and community participation could unlock additional AnyHJS benefits."
             >
                 <p>
-                    At AnyHJS, we believe loyal customers and active supporters deserve something extra.
-                    Whether you’ve been with us from the beginning, are placing a big order, or help spread
-                    the word on social media, our exclusive offers are designed to thank you with real
-                    savings on the brands you love – from Nike and Adidas to hundreds of other labels.
+                    The AnyHJS rewards concept is built around recognising people who return to the platform,
+                    place larger orders or actively support the community around the project. Different types
+                    of offers can provide additional savings across eligible products and brands, with the
+                    exact promotion depending on what is available at the time.
                 </p>
 
                 <hr />
 
-                <h2>How to Unlock Discounts</h2>
+                <h2>Ways to Access Extra Savings</h2>
 
-                <p>We offer three main ways to earn special discounts and rewards:</p>
+                <p>The current rewards concept is organised around three main types of benefit:</p>
 
                 <ul>
                     <li>
-                        <strong>Loyalty Rewards</strong> – for customers who shop with us regularly.
+                        <strong>Returning Customer Rewards</strong> – benefits linked to regular shopping activity.
                     </li>
                     <li>
-                        <strong>Bulk Order Savings</strong> – for big wardrobe refreshes and high-value orders.
+                        <strong>Larger Basket Offers</strong> – additional savings for qualifying higher-value orders.
                     </li>
                     <li>
-                        <strong>Social &amp; Influencer Perks</strong> – for helping us grow our community online.
+                        <strong>Community &amp; Creator Rewards</strong> – selected perks connected with sharing and supporting AnyHJS online.
                     </li>
                 </ul>
 
                 <p>
-                    The examples below are a guide to how our discounts work. Exact offers may vary over
-                    time and by promotion, and the latest details will always be shown at checkout or in
-                    your account area.
+                    The figures below are examples of how a future rewards programme could be structured.
+                    Promotions and eligibility can change, and any active offer would be shown in the relevant
+                    account or checkout experience before it is applied.
                 </p>
 
                 <hr />
 
-                <h2>Loyalty Rewards – Thank You for Coming Back</h2>
+                <h2>Returning Customer Rewards</h2>
 
                 <p>
-                    We love seeing familiar names. If you’ve been shopping with us consistently, we’ll
-                    reward you with automatic discounts and surprise perks. Your Lifetime Spend and number
-                    of orders help unlock higher tiers of rewards.
+                    Regular shoppers can move through example reward levels based on eligible order activity.
+                    Both the number of purchases and overall spend can be used to illustrate how increasingly
+                    active customers might gain access to additional benefits.
                 </p>
 
                 <div className="overflow-x-auto">
@@ -70,22 +70,22 @@ export function ExclusiveOffers() {
                             <tr>
                                 <td>Style Insider</td>
                                 <td>3+ orders or £300+ spent in the last 12 months</td>
-                                <td>Up to 5% off selected orders, early access to selected drops and sales.</td>
+                                <td>Up to 5% off selected orders, plus early access to chosen releases and sales.</td>
                             </tr>
                             <tr>
                                 <td>Style VIP</td>
                                 <td>8+ orders or £800+ spent in the last 12 months</td>
                                 <td>
-                                    Up to 10% off selected orders, priority access to new collections, occasional free
-                                    shipping promos.
+                                    Up to 10% off selected orders, earlier access to new collections and occasional
+                                    delivery promotions.
                                 </td>
                             </tr>
                             <tr>
                                 <td>Style Elite</td>
                                 <td>15+ orders or £1,500+ spent in the last 12 months</td>
                                 <td>
-                                    Up to 15% off selected orders, access to exclusive offers, special
-                                    birthday/anniversary discounts.
+                                    Up to 15% off selected orders, additional member offers and occasional
+                                    birthday or anniversary rewards.
                                 </td>
                             </tr>
                         </tbody>
@@ -93,18 +93,18 @@ export function ExclusiveOffers() {
                 </div>
 
                 <p>
-                    You don’t need to do anything special to join – we track your eligible orders
-                    automatically. When you qualify for a new tier or offer, you’ll see your discount
-                    applied at checkout or receive a unique code via email.
+                    In a full rewards experience, eligible activity could be counted automatically rather
+                    than requiring a separate sign-up for each tier. When a customer qualifies for an offer,
+                    the discount or relevant code would be shown in the account or checkout flow.
                 </p>
 
                 <hr />
 
-                <h2>Bulk Order Savings – Bigger Baskets, Bigger Benefits</h2>
+                <h2>Larger Basket Offers</h2>
 
                 <p>
-                    Refreshing your wardrobe or shopping for multiple people? We reward high-value orders
-                    with extra savings, even if it’s your first time with us.
+                    A bigger wardrobe update can also be used as the basis for an order-value promotion.
+                    These example thresholds show how savings could increase as the eligible basket total rises.
                 </p>
 
                 <div className="overflow-x-auto">
@@ -133,55 +133,56 @@ export function ExclusiveOffers() {
                 </div>
 
                 <p>
-                    These bulk discounts are perfect for seasonal hauls, team kits, family shopping or
-                    complete outfit refreshes across multiple brands – all in one basket, one checkout.
+                    This type of offer is intended for larger purchases such as seasonal updates, group
+                    shopping or complete outfit refreshes, including baskets that combine products from
+                    several different labels.
                 </p>
 
                 <hr />
 
-                <h2>Social &amp; Influencer Perks – Get Rewarded for Sharing</h2>
+                <h2>Community &amp; Creator Rewards</h2>
 
                 <p>
-                    AnyHJS is a social-first brand, and we’re grateful to everyone who helps spread the
-                    word. If you share your AnyHJS outfits, review us publicly or introduce our platform to
-                    your audience, we want to say thanks.
+                    AnyHJS is also designed with a social and creator community in mind. Selected campaigns
+                    could recognise people who share outfits, introduce others to the platform or work with
+                    the project as creators and partners.
                 </p>
 
                 <ul>
                     <li>
-                        <strong>Share &amp; Save:</strong> From time to time, we run campaigns where posting your AnyHJS
-                        fit and tagging us can unlock one-off discount codes.
+                        <strong>Share &amp; Save:</strong> Selected campaigns may offer a one-off code when an eligible AnyHJS
+                        look is shared and tagged according to the promotion details.
                     </li>
                     <li>
-                        <strong>Referral Rewards:</strong> Invite friends using your unique referral link. When they
-                        place their first order, they get a discount – and you receive a reward too.
+                        <strong>Referral Rewards:</strong> A referral programme could give a new shopper an introductory benefit
+                        while also rewarding the person who introduced them after a qualifying first order.
                     </li>
                     <li>
-                        <strong>Influencer Discounts:</strong> Creators with an established audience may qualify for
-                        higher-tier discount codes, affiliate commissions or collab opportunities.
+                        <strong>Creator Benefits:</strong> Established creators may be considered for campaign-specific discounts,
+                        affiliate arrangements or wider collaboration opportunities.
                     </li>
                 </ul>
 
                 <p>
-                    If you’re a content creator, influencer or brand interested in a deeper partnership,
-                    please visit our <strong>Collaborations</strong> page or contact us via the “Press / Media” or
-                    “Collaboration” options on our Contact page.
+                    Creators, influencers and brands interested in a broader partnership can use the
+                    <strong> Collaborations</strong> information or contact AnyHJS with details of the idea,
+                    audience and type of project they would like to discuss.
                 </p>
 
                 <hr />
 
-                <h2>Staying Up to Date</h2>
+                <h2>Keeping Track of Current Offers</h2>
 
                 <p>
-                    Our exclusive offers and reward levels may change over time as we add new brands,
-                    features and campaigns. For the most accurate and up-to-date information, always check
-                    your account area, your email inbox for AnyHJS updates, and the promotions shown at
-                    checkout.
+                    Reward structures can evolve as AnyHJS adds features, brands and new campaigns. Any
+                    promotion that is active at a particular time should be treated according to the details
+                    shown with that offer, including eligibility, duration and any checkout conditions.
                 </p>
 
                 <p>
-                    However you choose to shop – regularly, in bulk or as part of our social community –
-                    we’re committed to making sure you feel valued and rewarded at AnyHJS.
+                    Whether a benefit is linked to repeat shopping, a larger basket or community activity,
+                    the aim of the rewards concept is to make active AnyHJS customers and supporters feel
+                    recognised without making the shopping experience more complicated.
                 </p>
             </GenericPageSection>
         </div>
